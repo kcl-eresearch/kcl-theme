@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: KingsBureauGrotFiveOne;
-  src: url(/fonts/KingsBureauGrotesqueFiveOne-eot.eot?833e4b73dd2b0d277d2bbba8af22518d) format("eot");
-  src: url(/fonts/KingsBureauGrotesqueFiveOne-eot.eot?833e4b73dd2b0d277d2bbba8af22518d) format("embedded-opentype"), url(/fonts/KingsBureauGrotesqueFiveOne-woff.woff?719cf981311af36ff74c3a93cc4b52e2) format("woff"), url(/fonts/KingsBureauGrotesqueFiveOne-ttf.ttf?00b5abc9d6f9902528b320bebcec8131) format("truetype");
+  src: url("/dist/fonts/KingsBureauGrotesqueFiveOne-eot.eot") format("eot");
+  src: url("/dist/fonts/KingsBureauGrotesqueFiveOne-eot.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/KingsBureauGrotesqueFiveOne-woff.woff") format("woff"), url("/dist/fonts/KingsBureauGrotesqueFiveOne-ttf.ttf") format("truetype");
 }
 
 @font-face {
   font-family: KingsBureauGrotThreeSeven;
-  src: url(/fonts/KingsBureauGrotesqueThreeSeven-eot.eot?fb5515d00c19d06efeb4dceaedc36fed) format("eot");
-  src: url(/fonts/KingsBureauGrotesqueThreeSeven-eot.eot?fb5515d00c19d06efeb4dceaedc36fed) format("embedded-opentype"), url(/fonts/KingsBureauGrotesqueThreeSeven-woff.woff?a1c41de3174f4dddc9ac27d15f4707ac) format("woff"), url(/fonts/KingsBureauGrotesqueThreeSeven-svg.svg?9a5f8cda32e9a810e2744f75ed23a6cc) format("svg");
+  src: url("/dist/fonts/KingsBureauGrotesqueThreeSeven-eot.eot") format("eot");
+  src: url("/dist/fonts/KingsBureauGrotesqueThreeSeven-eot.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/KingsBureauGrotesqueThreeSeven-woff.woff") format("woff"), url("/dist/fonts/KingsBureauGrotesqueThreeSeven-svg.svg") format("svg");
 }
 
 /*!
