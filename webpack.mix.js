@@ -11,8 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('assets/js/app.js', 'dist/js');
-mix.sass('assets/sass/app.scss', 'dist/css');
-mix.copyDirectory('assets/fonts', 'dist/fonts');
-mix.copyDirectory('assets/images', 'dist/images');
-mix.copyDirectory('assets/videos', 'dist/videos');
+mix.js('assets/js/app.js', 'public/dist/js');
+mix.sass('assets/sass/app.scss', 'public/dist/css');
+mix.copyDirectory('assets/fonts', 'public/dist/fonts');
+mix.copyDirectory('assets/images', 'public/dist/images');
+mix.copyDirectory('assets/videos', 'public/dist/videos');
