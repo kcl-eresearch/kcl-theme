@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+}
+
+.text-midnightblue {
+  color: #0A2D50 !important;
+}
+
+.navbar-dark .navbar-nav {
+  .nav-link:hover, .nav-link:focus {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.bg-primary {
+  .navbar-nav .active > .nav-link {
+    font-weight: bold;
+  }
+}
+
+#primary_nav {
+  @media (min-width: 1076px) {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+
+  @media (min-width: 1303px) {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  .navbar-brand {
+    margin-left: 90px;
+
+    @media (min-width: 1076px) {
+      margin-left: 130px;
+    }
+
+    @media (min-width: 1303px) {
+      margin-left: 130px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 70px;
+      width: 92px;
+
+      @media (min-width: 1076px) {
+        left: 10%;
+        height: 100px;
+        width: 130px;
+      }
+
+      @media (min-width: 1303px) {
+        left: 17%;
+        height: 100px;
+        width: 130px;
+      }
+    }
+  }
+}
+
+#primary_header {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #e6ebed;
+}

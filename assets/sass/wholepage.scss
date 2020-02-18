@@ -1,0 +1,135 @@
+body.whole-page {
+  height: 100%;
+  background-color: #e6ebed;
+}
+
+body.whole-page-message {
+  height: 100%;
+  min-height: 35rem;
+  position: relative;
+
+  .message {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    color: $white;
+    text-align: center;
+
+    @media (min-width: 1076px) {
+      margin-top: 150px;
+    }
+  }
+
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    & {
+      background: url('../images/bg-mobile-fallback.jpg') #cd9557 no-repeat center center scroll;
+      background-position: cover;
+    }
+    video {
+      display: none;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #cd9557;
+    opacity: 0.7;
+    z-index: 1;
+  }
+}
+
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  z-index: 2;
+  .masthead-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 35rem;
+    height: 100%;
+    background-color: fade-out($blue, 0.2);
+    transform: skewY(4deg);
+    transform-origin: bottom right;
+  }
+  .masthead-content {
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    a {
+      color: $white;
+    }
+
+    img {
+      width: 150px;
+    }
+
+    .input-group-newsletter {
+      input {
+        height: auto;
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      button {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100%;
+    min-height: 0;
+    width: 40.5rem;
+    padding-bottom: 0;
+    .masthead-bg {
+      min-height: 0;
+      transform: skewX(-8deg);
+      transform-origin: top right;
+    }
+    .masthead-content {
+      padding-left: 3rem;
+      padding-right: 10rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
