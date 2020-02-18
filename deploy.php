@@ -1,6 +1,8 @@
 <?php
 namespace Deployer;
 
+require 'recipe/laravel.php';
+
 // Default env.
 set('default_stage', 'staging');
 
