@@ -11,15 +11,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-dark .navbar-nav {
-  .nav-link:hover, .nav-link:focus {
-    color: $white;
-    font-weight: bold;
-  }
-}
+  .nav-item {
+    margin: -1rem 0;
+    height: 70px;
+    padding: 1rem;
+    cursor: pointer;
 
-.bg-primary {
-  .navbar-nav .active > .nav-link {
-    font-weight: bold;
+    &:hover, &.active {
+      background-color: #e6ebed;
+
+      .nav-link {
+        color: $black !important;
+        font-weight: normal;
+      }
+    }
   }
 }
 
