@@ -13,3 +13,22 @@
        url('/fonts/KingsBureauGrotesqueThreeSeven-woff.woff') format("woff"),
        url('/fonts/KingsBureauGrotesqueThreeSeven-svg.svg') format("svg");
 }
+
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url('/fonts/webfa-regular-400.eot');
+  src: url('/fonts/webfa-regular-400.eot') format("embedded-opentype"),
+       url('/fonts/webfa-regular-400.woff2') format("woff2"),
+       url('/fonts/webfa-regular-400.woff') format("woff"),
+       url('/fonts/webfa-regular-400.ttf') format("truetype"),
+       url('/fonts/webfa-regular-400.svg') format("svg");
+}
+
+.fa, .fas, .far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
