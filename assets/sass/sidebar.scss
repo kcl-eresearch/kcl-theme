@@ -1,0 +1,95 @@
+/*
+ * Sidebar
+ */
+
+body.sidebar-page {
+  #primary_nav {
+    @media (min-width: 1076px) {
+      padding-left: 16.6%;
+      padding-right: 16.6%;
+    }
+
+    @media (min-width: 1303px) {
+      padding-left: 16.6%;
+      padding-right: 16.6%;
+    }
+
+    .navbar-brand {
+      margin-left: 90px;
+
+      @media (min-width: 1076px) {
+        margin-left: 80px;
+      }
+
+      @media (min-width: 1303px) {
+        margin-left: 80px;
+      }
+
+      img {
+        @media (min-width: 1076px) {
+          left: 16.6%;
+          margin-left: -65px;
+        }
+
+        @media (min-width: 1303px) {
+          left: 16.6%;
+          margin-left: -65px;
+        }
+      }
+    }
+  }
+}
+
+#sidebar_content {
+  padding-top: 55px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 70px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}

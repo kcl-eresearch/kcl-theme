@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #primary_nav {
+  z-index: 1000;
+
   @media (min-width: 1076px) {
     padding-left: 11%;
     padding-right: 11%;
