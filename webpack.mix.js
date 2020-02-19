@@ -16,4 +16,5 @@ mix.sass('assets/sass/app.scss', 'public/css');
 mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/fonts');
 mix.copyDirectory('assets/fonts', 'public/fonts');
 mix.copyDirectory('assets/images', 'public/images');
+mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/sprites', 'public/sprites');
 mix.copyDirectory('assets/videos', 'public/videos');
