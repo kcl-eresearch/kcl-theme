@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('assets/js/app.js', 'public/js');
 mix.sass('assets/sass/app.scss', 'public/css');
-mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/fonts')
+mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/fonts');
 mix.copyDirectory('assets/fonts', 'public/fonts');
 mix.copyDirectory('assets/images', 'public/images');
 mix.copyDirectory('assets/videos', 'public/videos');
