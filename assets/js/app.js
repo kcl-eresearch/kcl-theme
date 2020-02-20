@@ -23,6 +23,12 @@ require(['jquery', 'bootstrap'], function($, b) {
     $('[data-toggle="popover"]').popover({
         trigger: 'focus'
     });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    setTimeout(function() {
+      $(".alert.auto-dismiss").alert('close');
+    }, 10000);
   }
 
   setupPage();
@@ -42,4 +48,4 @@ require(['jquery', 'bootstrap'], function($, b) {
     }, 1000, 'swing');
     e.preventDefault();
   });
-}
+});
