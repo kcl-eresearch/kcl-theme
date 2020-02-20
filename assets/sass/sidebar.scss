@@ -6,32 +6,18 @@ body.sidebar-page {
   margin: 60px 0;
 
   #primary_nav {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
 
     .navbar-brand {
-      margin-left: 105px;
-
-      @media (min-width: 1076px) {
-        margin-left: 150px !important;
-        padding-left: 11.6%;
-      }
-
-      @media (min-width: 1500px) {
-        margin-left: 15px !important;
-        padding-left: 0;
-      }
+      margin-left: 110px;
+      padding-left: 0;
 
       img {
-        @media (min-width: 1076px) {
-          left: 16.6%;
-          margin-left: -65px;
-        }
-
-        @media (min-width: 1303px) {
-          left: 16.6%;
-          margin-left: -65px;
-        }
+        left: 0;
+        margin-left: 0;
+        height: 70px;
+        width: 93px;
       }
     }
   }
@@ -55,7 +41,7 @@ body.sidebar-page {
 }
 
 #sidebar_content {
-  padding-top: 55px;
+  padding-top: 30px;
 }
 
 .sidebar {
