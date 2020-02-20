@@ -6,29 +6,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
-.bg-kingsblue {
-  background-color: $blue !important;
-  color: $white;
-}
-
-.text-midnightblue {
-  color: #0A2D50 !important;
-}
-
-.navbar-dark .navbar-nav {
+.navbar-nav {
   .nav-item {
+    height: 70.2px;
     margin: -1rem 0;
     height: 70px;
     padding: 1rem;
     cursor: pointer;
+  }
+}
 
-    &:hover, &.active {
-      background-color: #e6ebed;
+.navbar-dark .navbar-nav .nav-item {
+  &:hover, &.active {
+    background-color: #e6ebed;
 
-      .nav-link {
-        color: $black !important;
-        font-weight: normal;
-      }
+    .nav-link {
+      color: $black !important;
+      font-weight: normal;
+    }
+  }
+}
+
+.navbar-light .navbar-nav .nav-item {
+  &:hover, &.active {
+    background-color: $primary;
+
+    .nav-link {
+      color: $white !important;
+      font-weight: normal;
     }
   }
 }
@@ -108,5 +113,29 @@ h1, h2, h3, h4, h5, h6 {
 
   i {
     font-weight: 800;
+  }
+}
+
+// Cards.
+
+.card-header {
+  font-weight: bold;
+}
+
+// Tables.
+
+.table-hover tbody tr {
+  @each $color, $value in $theme-colors {
+    &.table-#{$color} {
+      color: $white;
+    }
+
+    &.table-#{$color}:hover {
+      color: $white;
+    }
+  }
+
+  &:hover, &.table-light, &.table-light:hover, &.table-active:hover {
+    color: $table-color;
   }
 }
