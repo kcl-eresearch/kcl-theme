@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
+.bg-none {
+  background: none !important;
+}
+
 .navbar-nav {
   .nav-item {
     margin: -1rem 0;
@@ -79,6 +83,14 @@ h1, h2, h3, h4, h5, h6 {
         height: 100px;
         width: 130px;
       }
+    }
+  }
+
+  .breadcrumb {
+    margin-bottom: 0;
+
+    a {
+      color: $white;
     }
   }
 }

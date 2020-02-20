@@ -15,9 +15,15 @@
       <nav id="primary_nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="https://www.kcl.ac.uk">
           <img src="../images/kcl-logo.svg" class="d-inline-block align-top" alt="KCL Logo">
-          <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;App Name&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-          <small class="text-muted d-none d-lg-inline">Breadcrumb navigation / Previous page name / <strong>Current page name</strong></small>
+          <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;App Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;
         </a>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-none">
+            <li class="breadcrumb-item"><a href="#">Breadcrumb navigation</a></li>
+            <li class="breadcrumb-item"><a href="#">Previous page name</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Current page name</li>
+          </ol>
+        </nav>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

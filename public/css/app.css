@@ -11677,6 +11677,10 @@ h6 {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
+.bg-none {
+  background: none !important;
+}
+
 .navbar-nav .nav-item {
   margin: -1rem 0;
   height: 70.2px;
@@ -11762,6 +11766,14 @@ h6 {
     height: 100px;
     width: 130px;
   }
+}
+
+#primary_nav .breadcrumb {
+  margin-bottom: 0;
+}
+
+#primary_nav .breadcrumb a {
+  color: #fff;
 }
 
 #primary_header {
@@ -12055,6 +12067,7 @@ body.sidebar-page #primary_nav {
 }
 
 body.sidebar-page #primary_nav .navbar-brand {
+  margin-right: 0;
   margin-left: 110px;
   padding-left: 0;
 }
