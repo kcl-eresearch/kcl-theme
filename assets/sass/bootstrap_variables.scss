@@ -98,14 +98,14 @@ $pagination-border-width:           0 !default;
 $pagination-border-color:           transparent !default;
 
 $pagination-hover-color:            $white !default;
-$pagination-hover-bg:               darken($secondary, 15%) !default;
+$pagination-hover-bg:               darken($secondary, 7.5%) !default;
 $pagination-hover-border-color:     transparent !default;
 
 $pagination-active-bg:              $pagination-hover-bg !default;
 $pagination-active-border-color:    transparent !default;
 
-$pagination-disabled-color:         $gray-200 !default;
-$pagination-disabled-bg:            lighten($secondary, 15%) !default;
+$pagination-disabled-color:         $gray-700 !default;
+$pagination-disabled-bg:            $secondary !default;
 $pagination-disabled-border-color:  transparent !default;
 
 // Progress bars
