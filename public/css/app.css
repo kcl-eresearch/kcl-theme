@@ -11149,6 +11149,11 @@ h6 {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
+.bg-kingsblue {
+  background-color: #0A2D50 !important;
+  color: #fff;
+}
+
 .text-midnightblue {
   color: #0A2D50 !important;
 }
@@ -11233,6 +11238,32 @@ h6 {
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: #e6ebed;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: #fff;
+  background: #95a5a6;
+  line-height: 46px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: #fff;
+}
+
+.scroll-to-top:hover {
+  background: #212529;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
 }
 
 body.whole-page {
@@ -11389,33 +11420,26 @@ body.sidebar-page {
   margin: 60px 0;
 }
 
-@media (min-width: 1076px) {
-  body.sidebar-page #primary_nav {
-    padding-left: 16.6%;
-    padding-right: 16.6%;
-  }
-}
-
-@media (min-width: 1303px) {
-  body.sidebar-page #primary_nav {
-    padding-left: 16.6%;
-    padding-right: 16.6%;
-  }
+body.sidebar-page #primary_nav {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 body.sidebar-page #primary_nav .navbar-brand {
-  margin-left: 90px;
+  margin-left: 105px;
 }
 
 @media (min-width: 1076px) {
   body.sidebar-page #primary_nav .navbar-brand {
-    margin-left: 80px;
+    margin-left: 150px !important;
+    padding-left: 11.6%;
   }
 }
 
-@media (min-width: 1303px) {
+@media (min-width: 1500px) {
   body.sidebar-page #primary_nav .navbar-brand {
-    margin-left: 80px;
+    margin-left: 15px !important;
+    padding-left: 0;
   }
 }
 
@@ -11493,8 +11517,9 @@ body.sidebar-page .navbar {
   color: #999;
 }
 
-.sidebar .nav-link.active {
-  color: #007bff;
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  color: #0A2D50;
 }
 
 .sidebar .nav-link:hover .feather,

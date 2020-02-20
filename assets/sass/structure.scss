@@ -6,6 +6,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
+.bg-kingsblue {
+  background-color: $blue !important;
+  color: $white;
+}
+
 .text-midnightblue {
   color: #0A2D50 !important;
 }
@@ -78,4 +83,30 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: #e6ebed;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: $gray-600;
+  line-height: 46px;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+
+  &:hover {
+    background: $gray-900
+  }
+
+  i {
+    font-weight: 800;
+  }
 }

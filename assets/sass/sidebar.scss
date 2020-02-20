@@ -6,25 +6,20 @@ body.sidebar-page {
   margin: 60px 0;
 
   #primary_nav {
-    @media (min-width: 1076px) {
-      padding-left: 16.6%;
-      padding-right: 16.6%;
-    }
-
-    @media (min-width: 1303px) {
-      padding-left: 16.6%;
-      padding-right: 16.6%;
-    }
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 
     .navbar-brand {
-      margin-left: 90px;
+      margin-left: 105px;
 
       @media (min-width: 1076px) {
-        margin-left: 80px;
+        margin-left: 150px !important;
+        padding-left: 11.6%;
       }
 
-      @media (min-width: 1303px) {
-        margin-left: 80px;
+      @media (min-width: 1500px) {
+        margin-left: 15px !important;
+        padding-left: 0;
       }
 
       img {
@@ -99,8 +94,10 @@ body.sidebar-page {
   color: #999;
 }
 
-.sidebar .nav-link.active {
-  color: #007bff;
+.sidebar .nav-link {
+  &.active, &:hover {
+    color: $blue;
+  }
 }
 
 .sidebar .nav-link:hover .feather,
