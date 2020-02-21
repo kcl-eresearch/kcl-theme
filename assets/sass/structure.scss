@@ -39,6 +39,9 @@ body {
 
 #primary_nav {
   z-index: 1000;
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
 
   @media (min-width: 1076px) {
     padding-left: 11%;
