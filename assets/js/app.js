@@ -15,7 +15,7 @@ require(['jquery', 'bootstrap'], function($, b) {
       return 0;
   }
 
-  function setupPage() {
+  window.setupNMSPage = function() {
     $('[data-toggle="hoverover"]').popover({
         trigger: 'hover'
     });
@@ -31,7 +31,7 @@ require(['jquery', 'bootstrap'], function($, b) {
     }, 10000);
   }
 
-  setupPage();
+  window.setupNMSPage();
 
   $(document).on('scroll', function () {
     var scrollDistance = $(this).scrollTop();

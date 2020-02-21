@@ -121,7 +121,7 @@ Promise.resolve(/*! AMD require */).then(function() { var __WEBPACK_AMD_REQUIRE_
     return 0;
   };
 
-  function setupPage() {
+  window.setupNMSPage = function () {
     $('[data-toggle="hoverover"]').popover({
       trigger: 'hover'
     });
@@ -132,9 +132,9 @@ Promise.resolve(/*! AMD require */).then(function() { var __WEBPACK_AMD_REQUIRE_
     setTimeout(function () {
       $(".alert.auto-dismiss").alert('close');
     }, 10000);
-  }
+  };
 
-  setupPage();
+  window.setupNMSPage();
   $(document).on('scroll', function () {
     var scrollDistance = $(this).scrollTop();
 
