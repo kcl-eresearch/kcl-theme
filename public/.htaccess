@@ -1,26 +1,6 @@
-<FilesMatch ".(eot|otf|ttf|woff|woff2|mp4|css|js)">
-    Header always set Access-Control-Allow-Origin "*"
-</FilesMatch>
-
-# DISABLE CACHING
-<IfModule mod_headers.c>
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
-</IfModule>
-
-<FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
-    <IfModule mod_expires.c>
-        ExpiresActive Off
-    </IfModule>
+<FilesMatch "\.(eot|otf|ttf|woff|woff2|css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
     <IfModule mod_headers.c>
-        FileETag None
-        Header unset ETag
-        Header unset Pragma
-        Header unset Cache-Control
-        Header unset Last-Modified
-        Header set Pragma "no-cache"
-        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
-        Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+        Header always set Access-Control-Allow-Origin "*"
+        Header set Cache-Control "max-age=3600, must-revalidate"
     </IfModule>
 </FilesMatch>
