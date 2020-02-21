@@ -12082,7 +12082,8 @@ body.sidebar-page #primary_nav .navbar-brand img {
 }
 
 body.sidebar-page footer {
-  z-index: 1000;
+  z-index: 90;
+  /* Behind the sidebar, above content */
   position: fixed;
   bottom: 0;
   width: 100%;
