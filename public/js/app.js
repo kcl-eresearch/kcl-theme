@@ -169,6 +169,17 @@ Promise.resolve(/*! AMD require */).then(function() { var __WEBPACK_AMD_REQUIRE_
 
 /***/ }),
 
+/***/ "./assets/sass/themes/fresh/fresh.scss":
+/*!*********************************************!*\
+  !*** ./assets/sass/themes/fresh/fresh.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./node_modules/@fortawesome/fontawesome-free/js/all.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@fortawesome/fontawesome-free/js/all.js ***!
@@ -23613,13 +23624,14 @@ module.exports = g;
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************!*\
-  !*** multi ./assets/js/app.js ./assets/sass/app.scss ***!
-  \*******************************************************/
+/*!*********************************************************************************************!*\
+  !*** multi ./assets/js/app.js ./assets/sass/themes/fresh/fresh.scss ./assets/sass/app.scss ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/k1811651/nms_theme/assets/js/app.js */"./assets/js/app.js");
+__webpack_require__(/*! /home/k1811651/nms_theme/assets/sass/themes/fresh/fresh.scss */"./assets/sass/themes/fresh/fresh.scss");
 module.exports = __webpack_require__(/*! /home/k1811651/nms_theme/assets/sass/app.scss */"./assets/sass/app.scss");
 
 
