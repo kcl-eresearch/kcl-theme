@@ -123,10 +123,14 @@ Promise.resolve(/*! AMD require */).then(function() { var __WEBPACK_AMD_REQUIRE_
 
   window.setupNMSPage = function () {
     $('[data-toggle="hoverover"]').popover({
-      trigger: 'hover'
+      trigger: 'hover',
+      boundary: 'window',
+      container: 'body'
     });
     $('[data-toggle="popover"]').popover({
-      trigger: 'focus'
+      trigger: 'focus',
+      boundary: 'window',
+      container: 'body'
     });
     $('[data-toggle="tooltip"]').tooltip();
     setTimeout(function () {

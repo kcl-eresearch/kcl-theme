@@ -17,11 +17,15 @@ require(['jquery', 'bootstrap'], function($, b) {
 
   window.setupNMSPage = function() {
     $('[data-toggle="hoverover"]').popover({
-        trigger: 'hover'
+        trigger: 'hover',
+        boundary: 'window',
+        container: 'body'
     });
 
     $('[data-toggle="popover"]').popover({
-        trigger: 'focus'
+        trigger: 'focus',
+        boundary: 'window',
+        container: 'body'
     });
 
     $('[data-toggle="tooltip"]').tooltip();

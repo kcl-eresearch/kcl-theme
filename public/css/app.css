@@ -12082,6 +12082,7 @@ body.sidebar-page #primary_nav .navbar-brand img {
 }
 
 body.sidebar-page footer {
+  z-index: 1000;
   position: fixed;
   bottom: 0;
   width: 100%;
