@@ -18177,7 +18177,7 @@ body.whole-page-message .overlay {
  */
 
 body.sidebar-page {
-  margin: 60px 0;
+  margin: 70px 0;
 }
 
 body.sidebar-page #primary_nav {
@@ -18218,16 +18218,17 @@ body.sidebar-page .navbar {
   right: 0;
 }
 
+body.sidebar-page #sidebar_content main {
+  padding-top: 20px;
+}
+
 .sidebar {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 992px) {
-  #sidebar_content {
-    padding-top: 30px;
-  }
-
   .sidebar {
+    display: block !important;
     position: fixed;
     top: 0;
     bottom: 0;

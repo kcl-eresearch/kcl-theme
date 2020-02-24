@@ -24,24 +24,12 @@
             <li class="breadcrumb-item active" aria-current="page">Current page name</li>
           </ol>
         </nav>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-main" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainnavbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown d-block d-lg-none">
-              <a class="nav-link dropdown-toggle" href="#" id="mainUserDropdownMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-lock"></i> Logged in as k1000000
-              </a>
-              <div class="dropdown-menu" aria-labelledby="mainUserDropdownMobile">
-                <a class="dropdown-item" href="#">Dashboard</a>
-                <a class="dropdown-item" href="#">Settings</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Logout</a>
-              </div>
-            </li>
-          </ul>
+          <div class="mr-auto"></div>
           <div class="dropdown mr-3 d-none d-lg-block">
             <button class="btn btn-kingsgrey dropdown-toggle" type="button" id="mainUserDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-lock"></i> Logged in as k1000000
@@ -57,7 +45,7 @@
       </nav>
       <div id="sidebar_content" class="container-fluid">
         <div class="row">
-          <nav class="col-sm-12 col-lg-2 bg-light sidebar">
+          <nav class="col-sm-12 col-lg-2 bg-light sidebar collapse navbar-collapse" id="sidebar-main">
             <div class="sidebar-sticky">
               <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                 <span>Side heading</span>

@@ -3,7 +3,7 @@
  */
 
 body.sidebar-page {
-  margin: 60px 0;
+  margin: 70px 0;
 
   #primary_nav {
     background-image: none;
@@ -41,6 +41,10 @@ body.sidebar-page {
     left: 0;
     right: 0;
   }
+
+  #sidebar_content main {
+    padding-top: 20px;
+  }
 }
 
 .sidebar {
@@ -48,11 +52,8 @@ body.sidebar-page {
 }
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {
-  #sidebar_content {
-    padding-top: 30px;
-  }
-
   .sidebar {
+    display: block !important;
     position: fixed;
     top: 0;
     bottom: 0;
