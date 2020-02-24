@@ -17,4 +17,4 @@ before_script:
 deploy_staging:
   stage: deploy
   script:
-    - php deployer.phar deploy staging -vvv
+    - script "php deployer.phar deploy staging -vvv"
