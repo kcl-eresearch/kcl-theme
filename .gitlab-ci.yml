@@ -5,7 +5,7 @@ stages:
 before_script:
     - pwd
     - curl -LO https://deployer.org/deployer.phar
-    - apt update -y && apt install -y openssh-client && apt clean
+    - apt update -y && apt install -y openssh-client git && apt clean
     - mkdir ~/.ssh && chmod 0700 ~/.ssh
     - cp $SSHPRIVKEY ~/.ssh/id_rsa
     - chmod 0600 ~/.ssh/id_rsa
