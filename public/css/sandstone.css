@@ -17740,123 +17740,6 @@ body {
   background: none !important;
 }
 
-#mainnavbar {
-  margin-top: 32px;
-}
-
-.navbar-nav .nav-item {
-  margin: -1rem 0;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.navbar-nav .navbar-collapse {
-  margin-top: 30px;
-}
-
-@media (min-width: 992px) {
-  #mainnavbar {
-    margin-top: 0;
-  }
-
-  .navbar-nav .nav-item {
-    height: 70.2px;
-  }
-
-  .navbar-nav .nav-item.navbar-dark:hover,
-  .navbar-nav .nav-item.navbar-dark.active {
-    background-color: #e6ebed;
-  }
-
-  .navbar-nav .nav-item.navbar-dark:hover .nav-link,
-  .navbar-nav .nav-item.navbar-dark.active .nav-link {
-    color: #000 !important;
-    font-weight: normal;
-  }
-}
-
-.navbar-light .navbar-nav .nav-item:hover,
-.navbar-light .navbar-nav .nav-item.active {
-  background-color: #325D88;
-}
-
-.navbar-light .navbar-nav .nav-item:hover .nav-link,
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #fff !important;
-  font-weight: normal;
-}
-
-#primary_nav {
-  z-index: 1000;
-  background-image: url(/images/header.png?003e2cdbd6dc35d02f555b843cca55d0);
-  background-repeat: no-repeat;
-  background-position: right top;
-}
-
-@media (min-width: 1076px) {
-  #primary_nav {
-    padding-left: 11%;
-    padding-right: 11%;
-  }
-}
-
-@media (min-width: 1303px) {
-  #primary_nav {
-    padding-left: 18%;
-    padding-right: 18%;
-  }
-}
-
-#primary_nav .navbar-brand {
-  margin-left: 90px;
-}
-
-@media (min-width: 1076px) {
-  #primary_nav .navbar-brand {
-    margin-left: 130px;
-  }
-}
-
-@media (min-width: 1303px) {
-  #primary_nav .navbar-brand {
-    margin-left: 130px;
-  }
-}
-
-#primary_nav .navbar-brand img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 70px;
-  width: 92px;
-}
-
-@media (min-width: 1076px) {
-  #primary_nav .navbar-brand img {
-    left: 10%;
-    height: 100px;
-    width: 130px;
-  }
-}
-
-@media (min-width: 1303px) {
-  #primary_nav .navbar-brand img {
-    left: 17%;
-    height: 100px;
-    width: 130px;
-  }
-}
-
-#primary_nav .breadcrumb {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-#primary_nav .breadcrumb a {
-  color: #fff;
-}
-
 #primary_header {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -17994,6 +17877,10 @@ body {
 .table-hover tbody tr.table-light:hover,
 .table-hover tbody tr.table-active:hover {
   color: #3E3F3A;
+}
+
+.table thead th {
+  border: 0;
 }
 
 body.whole-page {
