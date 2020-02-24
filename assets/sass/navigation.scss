@@ -22,8 +22,10 @@
 
   .navbar-nav .nav-item {
     height: 70.2px;
+  }
 
-    &.navbar-dark {
+  .navbar-dark {
+    .nav-item {
       &:hover, &.active {
         background-color: #e6ebed;
 
