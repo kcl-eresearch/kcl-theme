@@ -15,6 +15,32 @@
   }
 }
 
+.navbar-dark .navbar-nav .nav-item {
+  &:hover, &.active, &.active {
+    .nav-link {
+      color: $white !important;
+      font-weight: normal;
+    }
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.navbar-light .navbar-nav .nav-item {
+  &:hover, &.active, &.active {
+    .nav-link {
+      color: $black !important;
+      font-weight: normal;
+    }
+  }
+
+  .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 @media (min-width: map-get($grid-breakpoints, "lg")) {
   #mainnavbar {
     margin-top: 0;
@@ -24,27 +50,25 @@
     height: 70.2px;
   }
 
-  .navbar-dark {
-    .nav-item {
-      &:hover, &.active {
-        background-color: #e6ebed;
+  .navbar-dark .navbar-nav .nav-item {
+    &:hover, &.active, .active {
+      background-color: #e6ebed;
 
-        .nav-link {
-          color: $black !important;
-          font-weight: normal;
-        }
+      .nav-link {
+        color: $black !important;
+        font-weight: normal;
       }
     }
   }
-}
 
-.navbar-light .navbar-nav .nav-item {
-  &:hover, &.active {
-    background-color: $primary;
+  .navbar-light .navbar-nav .nav-item {
+    &:hover, &.active, .active {
+      background-color: $primary;
 
-    .nav-link {
-      color: $white !important;
-      font-weight: normal;
+      .nav-link {
+        color: $white !important;
+        font-weight: normal;
+      }
     }
   }
 }

@@ -17897,6 +17897,28 @@ body {
   margin-top: 30px;
 }
 
+.navbar-dark .navbar-nav .nav-item:hover .nav-link,
+.navbar-dark .navbar-nav .nav-item.active .nav-link,
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  color: #fff !important;
+  font-weight: normal;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link,
+.navbar-light .navbar-nav .nav-item.active .nav-link,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #000 !important;
+  font-weight: normal;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @media (min-width: 992px) {
   #mainnavbar {
     margin-top: 0;
@@ -17906,27 +17928,31 @@ body {
     height: 70.2px;
   }
 
-  .navbar-dark .nav-item:hover,
-  .navbar-dark .nav-item.active {
+  .navbar-dark .navbar-nav .nav-item:hover,
+  .navbar-dark .navbar-nav .nav-item.active,
+  .navbar-dark .navbar-nav .nav-item .active {
     background-color: #e6ebed;
   }
 
-  .navbar-dark .nav-item:hover .nav-link,
-  .navbar-dark .nav-item.active .nav-link {
+  .navbar-dark .navbar-nav .nav-item:hover .nav-link,
+  .navbar-dark .navbar-nav .nav-item.active .nav-link,
+  .navbar-dark .navbar-nav .nav-item .active .nav-link {
     color: #000 !important;
     font-weight: normal;
   }
-}
 
-.navbar-light .navbar-nav .nav-item:hover,
-.navbar-light .navbar-nav .nav-item.active {
-  background-color: #333C3E;
-}
+  .navbar-light .navbar-nav .nav-item:hover,
+  .navbar-light .navbar-nav .nav-item.active,
+  .navbar-light .navbar-nav .nav-item .active {
+    background-color: #333C3E;
+  }
 
-.navbar-light .navbar-nav .nav-item:hover .nav-link,
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #fff !important;
-  font-weight: normal;
+  .navbar-light .navbar-nav .nav-item:hover .nav-link,
+  .navbar-light .navbar-nav .nav-item.active .nav-link,
+  .navbar-light .navbar-nav .nav-item .active .nav-link {
+    color: #fff !important;
+    font-weight: normal;
+  }
 }
 
 #primary_nav {
