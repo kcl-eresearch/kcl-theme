@@ -1,10 +1,11 @@
-image: php:7.2
+image: php:7.2-cli-buster
 
 stages:
   - deploy
 before_script:
     # Install composer dependencies
     - curl -LO https://deployer.org/deployer.phar
+    - apt update -y && apt install -y openssh-client && apt clean
 deploy_staging:
   stage: deploy
   script:
