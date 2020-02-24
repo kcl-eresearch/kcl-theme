@@ -6,6 +6,7 @@ before_script:
     # Install composer dependencies
     - curl -LO https://deployer.org/deployer.phar
     - apt update -y && apt install -y openssh-client && apt clean
+    - cd ~ && mkdir .ssh && chmod 0700 .ssh && echo $SSHPRIVKEY > .ssh/id_rsa && chmod 0600 .ssh/id_rsa
 deploy_staging:
   stage: deploy
   script:
