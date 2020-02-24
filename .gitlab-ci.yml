@@ -1,0 +1,11 @@
+image: php:7.2
+
+stages:
+  - deploy
+before_script:
+    # Install composer dependencies
+    - curl -LO https://deployer.org/deployer.phar
+deploy_staging:
+  stage: deploy
+  script:
+    - php deployer.phar deploy staging -vvv
