@@ -6,22 +6,39 @@ body {
   background: none !important;
 }
 
+#mainnavbar {
+  margin-top: 32px;
+}
+
 .navbar-nav {
   .nav-item {
     margin: -1rem 0;
-    height: 70.2px;
     padding: 1rem;
     cursor: pointer;
   }
+
+  .navbar-collapse {
+    margin-top: 30px;
+  }
 }
 
-.navbar-dark .navbar-nav .nav-item {
-  &:hover, &.active {
-    background-color: #e6ebed;
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  #mainnavbar {
+    margin-top: 0;
+  }
 
-    .nav-link {
-      color: $black !important;
-      font-weight: normal;
+  .navbar-nav .nav-item {
+    height: 70.2px;
+
+    &.navbar-dark {
+      &:hover, &.active {
+        background-color: #e6ebed;
+
+        .nav-link {
+          color: $black !important;
+          font-weight: normal;
+        }
+      }
     }
   }
 }

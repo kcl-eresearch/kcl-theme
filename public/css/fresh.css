@@ -17740,22 +17740,39 @@ body {
   background: none !important;
 }
 
+#mainnavbar {
+  margin-top: 32px;
+}
+
 .navbar-nav .nav-item {
   margin: -1rem 0;
-  height: 70.2px;
   padding: 1rem;
   cursor: pointer;
 }
 
-.navbar-dark .navbar-nav .nav-item:hover,
-.navbar-dark .navbar-nav .nav-item.active {
-  background-color: #e6ebed;
+.navbar-nav .navbar-collapse {
+  margin-top: 30px;
 }
 
-.navbar-dark .navbar-nav .nav-item:hover .nav-link,
-.navbar-dark .navbar-nav .nav-item.active .nav-link {
-  color: #000 !important;
-  font-weight: normal;
+@media (min-width: 992px) {
+  #mainnavbar {
+    margin-top: 0;
+  }
+
+  .navbar-nav .nav-item {
+    height: 70.2px;
+  }
+
+  .navbar-nav .nav-item.navbar-dark:hover,
+  .navbar-nav .nav-item.navbar-dark.active {
+    background-color: #e6ebed;
+  }
+
+  .navbar-nav .nav-item.navbar-dark:hover .nav-link,
+  .navbar-nav .nav-item.navbar-dark.active .nav-link {
+    color: #000 !important;
+    font-weight: normal;
+  }
 }
 
 .navbar-light .navbar-nav .nav-item:hover,

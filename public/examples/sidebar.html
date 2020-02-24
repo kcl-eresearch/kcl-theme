@@ -15,9 +15,9 @@
       <nav id="primary_nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
           <img src="../images/kcl-logo.svg" class="d-inline-block align-top" alt="KCL Logo">
-          <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;App Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;
+          <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;App Name<span class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</span>
         </a>
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="d-none d-lg-block">
           <ol class="breadcrumb bg-none">
             <li class="breadcrumb-item"><a href="#">Breadcrumb navigation</a></li>
             <li class="breadcrumb-item"><a href="#">Previous page name</a></li>
@@ -29,8 +29,20 @@
         </button>
 
         <div class="collapse navbar-collapse" id="mainnavbar">
-          <div class="navbar-nav mr-auto"></div>
-          <div class="dropdown mr-3">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown d-block d-lg-none">
+              <a class="nav-link dropdown-toggle" href="#" id="mainUserDropdownMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-lock"></i> Logged in as k1000000
+              </a>
+              <div class="dropdown-menu" aria-labelledby="mainUserDropdownMobile">
+                <a class="dropdown-item" href="#">Dashboard</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+          <div class="dropdown mr-3 d-none d-lg-block">
             <button class="btn btn-kingsgrey dropdown-toggle" type="button" id="mainUserDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-lock"></i> Logged in as k1000000
             </button>
