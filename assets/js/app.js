@@ -4,6 +4,8 @@ import 'bootstrap';
 import 'clipboard';
 import 'select2';
 import 'dropzone';
+import 'datatables';
+import './datatablesbootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 
 require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, ClipboardJS, Dropzone) {
@@ -32,6 +34,8 @@ require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, Clipboa
     });
 
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('.datatable').DataTable();
 
     setTimeout(function() {
       $(".alert.auto-dismiss").alert('close');
