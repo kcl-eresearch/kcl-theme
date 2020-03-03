@@ -12,8 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mix.js('assets/js/app.js', 'public/js');
-mix.sass('assets/sass/themes/fresh/fresh.scss', 'public/css');
-mix.sass('assets/sass/themes/sandstone/sandstone.scss', 'public/css');
 mix.sass('assets/sass/app.scss', 'public/css');
 mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/fonts');
 mix.copyDirectory('assets/fonts', 'public/fonts');
