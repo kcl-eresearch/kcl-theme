@@ -5,7 +5,7 @@ import 'clipboard';
 import 'select2';
 import 'dropzone';
 import 'datatables';
-import './datatablesbootstrap';
+import './datatables-bootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 
 require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, ClipboardJS, Dropzone) {

@@ -109,8 +109,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var dropzone__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(dropzone__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var datatables__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! datatables */ "./node_modules/datatables/media/js/jquery.dataTables.js");
 /* harmony import */ var datatables__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(datatables__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _datatablesbootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./datatablesbootstrap */ "./assets/js/datatablesbootstrap.js");
-/* harmony import */ var _datatablesbootstrap__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_datatablesbootstrap__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _datatables_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./datatables-bootstrap */ "./assets/js/datatables-bootstrap.js");
+/* harmony import */ var _datatables_bootstrap__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_datatables_bootstrap__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ "./node_modules/@fortawesome/fontawesome-free/js/all.js");
 /* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_8__);
 
@@ -178,10 +178,10 @@ Promise.resolve(/*! AMD require */).then(function() { var __WEBPACK_AMD_REQUIRE_
 
 /***/ }),
 
-/***/ "./assets/js/datatablesbootstrap.js":
-/*!******************************************!*\
-  !*** ./assets/js/datatablesbootstrap.js ***!
-  \******************************************/
+/***/ "./assets/js/datatables-bootstrap.js":
+/*!*******************************************!*\
+  !*** ./assets/js/datatables-bootstrap.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
