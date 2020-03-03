@@ -3,9 +3,10 @@ import 'jquery-ui';
 import 'bootstrap';
 import 'clipboard';
 import 'select2';
+import 'dropzone';
 import '@fortawesome/fontawesome-free/js/all';
 
-require(['jquery', 'bootstrap', 'clipboard'], function($, b, ClipboardJS) {
+require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, ClipboardJS, Dropzone) {
   window.$ = window.jQuery = $;
 
   $.urlParam = function(name){
@@ -32,16 +33,16 @@ require(['jquery', 'bootstrap', 'clipboard'], function($, b, ClipboardJS) {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    $('select').select2({'theme': 'bootstrap4'});
-
-    var clipboard = new ClipboardJS('.btn-clipboard');
-
     setTimeout(function() {
       $(".alert.auto-dismiss").alert('close');
     }, 10000);
   }
 
   window.setupNMSPage();
+
+  $('select').select2({'theme': 'bootstrap4'});
+
+  var clipboard = new ClipboardJS('.btn-clipboard');
 
   $(document).on('scroll', function () {
     var scrollDistance = $(this).scrollTop();
