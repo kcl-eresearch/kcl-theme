@@ -1,3 +1,4 @@
+// Core.
 @import "fonts";
 @import "~bootstrap/scss/functions";
 @import "bootstrap_variables";
@@ -8,3 +9,7 @@
 @import "wholepage";
 @import "sidebar";
 @import "typography";
+
+// Contrib.
+@import "~select2/src/scss/core";
+@import "~@ttskch/select2-bootstrap4-theme/src/layout";

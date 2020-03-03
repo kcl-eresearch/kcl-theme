@@ -1,9 +1,11 @@
 import 'jquery';
 import 'jquery-ui';
 import 'bootstrap';
+import 'clipboard';
+import 'select2';
 import '@fortawesome/fontawesome-free/js/all';
 
-require(['jquery', 'bootstrap'], function($, b) {
+require(['jquery', 'bootstrap', 'clipboard'], function($, b, ClipboardJS) {
   window.$ = window.jQuery = $;
 
   $.urlParam = function(name){
@@ -29,6 +31,10 @@ require(['jquery', 'bootstrap'], function($, b) {
     });
 
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('select').select2({'theme': 'bootstrap4'});
+
+    var clipboard = new ClipboardJS('.btn-clipboard');
 
     setTimeout(function() {
       $(".alert.auto-dismiss").alert('close');
