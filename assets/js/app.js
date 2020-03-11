@@ -44,7 +44,7 @@ require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, Clipboa
 
   window.setupNMSPage();
 
-  $('select[:not(.nos2)]').select2({'theme': 'bootstrap4'});
+  $('select:not(.nos2)').select2({'theme': 'bootstrap4'});
 
   var clipboard = new ClipboardJS('.btn-clipboard');
 
