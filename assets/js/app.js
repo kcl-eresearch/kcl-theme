@@ -6,6 +6,7 @@ import 'select2';
 import 'dropzone';
 import 'datatables';
 import './datatables-bootstrap';
+import 'node-waves'
 import '@fortawesome/fontawesome-free/js/all';
 
 require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, ClipboardJS, Dropzone) {
@@ -18,6 +19,11 @@ require(['jquery', 'bootstrap', 'clipboard', 'dropzone'], function($, b, Clipboa
       }
 
       return 0;
+  }
+
+  if (window.Waves) {
+      Waves.attach('.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on', ['waves-themed']);
+      Waves.init();
   }
 
   window.setupNMSPage = function() {
