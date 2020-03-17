@@ -1,4 +1,10 @@
+.bundle
+.cache
+.DS_Store
+.sass-cache
+.tmp
 /node_modules
 npm-debug.log
 yarn-error.log
+vendor
 /images

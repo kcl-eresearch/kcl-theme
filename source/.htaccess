@@ -1,0 +1,6 @@
+<FilesMatch "\.(eot|otf|ttf|woff|woff2|css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
+    <IfModule mod_headers.c>
+        Header always set Access-Control-Allow-Origin "*"
+        Header set Cache-Control "max-age=3600, must-revalidate"
+    </IfModule>
+</FilesMatch>

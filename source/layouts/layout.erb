@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title><%= current_page.data.title || "NMS Theme" %></title>
+  <%= stylesheet_link_tag "app" %>
+  <%= stylesheet_link_tag "custom" %>
+</head>
+<body>
+  <nav id="primary_nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <%= image_tag 'kcl-logo.svg', :class => 'd-inline-block align-top' %>
+      Theme<span class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainnavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <% link_to '/index.html', :class => 'nav-link' do %>
+           Home <span class="sr-only">(current)</span>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <% link_to '/examples/wholepage.html', :class => 'nav-link' do %>
+            Whole-page message
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <% link_to '/examples/coming-soon.html', :class => 'nav-link' do %>
+            Coming soon page
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <% link_to '/examples/sidebar.html', :class => 'nav-link' do %>
+            Sidebar Nav
+          <% end %>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div id="primary_header" class="page-header" id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-6">
+          <h1>King's College London</h1>
+          <p class="lead">Faculty of Natural and Mathematical Sciences web theme</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+
+    <div id="source-modal" class="modal fade" tabindex='-1'>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Source Code</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <pre contenteditable></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <ul class="list-unstyled">
+            <li class="float-lg-right"><a href="#top">Back to top</a></li>
+            <li>Copyright &copy; 2020 King's College London</li>
+          </ul>
+
+        </div>
+      </div>
+
+    </footer>
+
+
+  </div>
+
+  <%= javascript_include_tag "app" %>
+</body>
+</html>

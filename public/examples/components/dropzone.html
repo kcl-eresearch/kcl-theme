@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>NMS Theme - Sidebar</title>
+    <title>Dropzone</title>
 
-  <link href="../../css/app.css" rel="stylesheet">
-  <link href="../../css/custom.css" rel="stylesheet">
+  <link href="../../css/app.css" rel="stylesheet" />
+  <link href="../../css/custom.css" rel="stylesheet" />
 </head>
 <body class="whole-page sidebar-page">
   <span id="page-top"></span>
   <nav id="primary_nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">
-      <img src="../../images/kcl-logo.svg" class="d-inline-block align-top" alt="KCL Logo">
+      <img src="../../images/kcl-logo.svg" class="d-inline-block align-top" alt="Kcl logo" />
       <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;App Name<span class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</span>
     </a>
     <nav aria-label="breadcrumb" class="d-none d-lg-block">
@@ -52,78 +52,67 @@
           </h6>
           <ul class="nav flex-column mb-2">
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
-                <i class="fas fa-blender"></i>
+<a href="/" class="nav-link">                <i class="fas fa-blender"></i>
                 Home
-              </a>
-            </li>
+</a>            </li>
             <li class="nav-item">
-              <a class="nav-link" href="../sidebar.html">
-                <i class="fas fa-cogs"></i>
-                Sidebar Nav
-              </a>
-            </li>
+<a href="/examples/sidebar.html" class="nav-link active">                <i class="fas fa-cogs"></i>
+                Sidebar Nav <span class="sr-only">(current)</span>
+</a>            </li>
             <li class="nav-item">
-              <a class="nav-link" href="../wholepage.html">
-                <i class="fas fa-binoculars"></i>
+<a href="/examples/wholepage.html" class="nav-link">                <i class="fas fa-binoculars"></i>
                 Whole-page message
-              </a>
-            </li>
+</a>            </li>
             <li class="nav-item">
-              <a class="nav-link" href="../coming-soon.html">
-                <i class="fas fa-biohazard"></i>
+<a href="/examples/coming-soon.html" class="nav-link">                <i class="fas fa-biohazard"></i>
                 Coming soon page
-              </a>
-            </li>
+</a>            </li>
           </ul>
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Errors</span>
           </h6>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="../../errors/50x.html">
-                <i class="fas fa-user"></i>
+<a href="/errors/50x.html" class="nav-link">                <i class="fas fa-user"></i>
                 50x
-              </a>
-            </li>
+</a>            </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../errors/404.html">
-                <i class="fas fa-cog"></i>
+<a href="/errors/404.html" class="nav-link">                <i class="fas fa-cog"></i>
                 404
-              </a>
-            </li>
+</a>            </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../errors/403.html">
-                <i class="fas fa-bell"></i>
+<a href="/errors/403.html" class="nav-link">                <i class="fas fa-bell"></i>
                 403
-              </a>
-            </li>
+</a>            </li>
           </ul>
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Other Components</span>
           </h6>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="datatables.html">
-                <i class="fas fa-user"></i>
+<a href="/examples/components/datatables.html" class="nav-link">                <i class="fas fa-user"></i>
                 DataTables
-              </a>
-            </li>
+</a>            </li>
             <li class="nav-item">
-              <a class="nav-link active" href="dropzone.html">
-                <i class="fas fa-cog"></i>
-                Dropzone (file uploads) <span class="sr-only">(current)</span>
-              </a>
-            </li>
+<a href="/examples/components/dropzone.html" class="nav-link">                <i class="fas fa-cog"></i>
+                Dropzone (file uploads)
+</a>            </li>
           </ul>
         </div>
       </nav>
       <main role="main" class="col-md-12 col-lg-10 ml-sm-auto px-4">
-        <form action="/file-upload" class="dropzone">
-          <div class="fallback">
-            <input name="file" type="file" multiple />
+        <div class="row mb-2">
+          <div class="col">
+            <h2>Dropzone</h2>
+            <hr />
           </div>
-        </form>
+        </div>
+        <form action="/file-upload" class="dropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form>
+
       </main>
     </div>
   </div>

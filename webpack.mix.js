@@ -11,10 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('assets/js/app.js', 'public/js');
-mix.sass('assets/sass/app.scss', 'public/css');
-mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/fonts');
-mix.copyDirectory('assets/fonts', 'public/fonts');
-mix.copyDirectory('assets/images', 'public/images');
-mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/sprites', 'public/sprites');
-mix.copyDirectory('assets/videos', 'public/videos');
+mix.js('source/assets/js/app.js', '.tmp/dist/js');
+mix.sass('source/assets/sass/app.scss', '.tmp/dist/css');
+mix.sass('source/assets/sass/custom.scss', '.tmp/dist/css');
+mix.sass('source/assets/sass/custom-wholepage.scss', '.tmp/dist/css');
+mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', '.tmp/dist/fonts');
+mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/sprites', '.tmp/dist/sprites');
+mix.copyDirectory('source/assets/fonts', '.tmp/dist/fonts');
+mix.copyDirectory('source/assets/images', '.tmp/dist/images');
+mix.copyDirectory('source/assets/videos', '.tmp/dist/videos');

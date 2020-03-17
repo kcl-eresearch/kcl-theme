@@ -1,0 +1,133 @@
+
+#mainnavbar {
+  margin-top: 32px;
+}
+
+.navbar-nav {
+  .nav-item {
+    margin: -1rem 0;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .navbar-collapse {
+    margin-top: 30px;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  &:hover, &.active, &.active {
+    .nav-link {
+      color: $white !important;
+      font-weight: normal;
+    }
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.navbar-light .navbar-nav .nav-item {
+  &:hover, &.active, &.active {
+    .nav-link {
+      color: $black !important;
+      font-weight: normal;
+    }
+  }
+
+  .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  #mainnavbar {
+    margin-top: 0;
+  }
+
+  .navbar-nav .nav-item {
+    height: 70.2px;
+  }
+
+  .navbar-dark .navbar-nav .nav-item {
+    &:hover, &.active, .active {
+      background-color: #e6ebed;
+
+      .nav-link {
+        color: $black !important;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-item {
+    &:hover, &.active, .active {
+      background-color: $primary;
+
+      .nav-link {
+        color: $white !important;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+#primary_nav {
+  z-index: 1000;
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  @media (min-width: 1076px) {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+
+  @media (min-width: 1303px) {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  .navbar-brand {
+    margin-left: 90px;
+
+    @media (min-width: 1076px) {
+      margin-left: 130px;
+    }
+
+    @media (min-width: 1303px) {
+      margin-left: 130px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 70px;
+      width: 92px;
+
+      @media (min-width: 1076px) {
+        left: 10%;
+        height: 100px;
+        width: 130px;
+      }
+
+      @media (min-width: 1303px) {
+        left: 17%;
+        height: 100px;
+        width: 130px;
+      }
+    }
+  }
+
+  .breadcrumb {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    a {
+      color: $white;
+    }
+  }
+}

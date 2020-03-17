@@ -86,121 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./assets/js/app.js":
-/*!**************************!*\
-  !*** ./assets/js/app.js ***!
-  \**************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ "./node_modules/@fortawesome/fontawesome-free/js/all.js");
-/* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__);
-
-
-(function () {
-  'use strict';
-
-  window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-  __webpack_require__(/*! jquery-ui */ "./node_modules/jquery-ui/ui/widget.js");
-
-  __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
-
-  __webpack_require__(/*! select2 */ "./node_modules/select2/dist/js/select2.js");
-
-  __webpack_require__(/*! node-waves */ "./node_modules/node-waves/src/js/waves.js");
-
-  __webpack_require__(/*! dropzone */ "./node_modules/dropzone/dist/dropzone.js");
-
-  window.dt = __webpack_require__(/*! datatables.net-bs4 */ "./node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js");
-
-  __webpack_require__(/*! datatables.net-responsive-bs4 */ "./node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.js");
-
-  $.urlParam = function (name) {
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-
-    if (results && results.length > 0) {
-      return results[1];
-    }
-
-    return 0;
-  };
-
-  window.setupNMSPage = function () {
-    $('[data-toggle="hoverover"]').popover({
-      trigger: 'hover',
-      boundary: 'window',
-      container: 'body'
-    });
-    $('[data-toggle="popover"]').popover({
-      trigger: 'focus',
-      boundary: 'window',
-      container: 'body'
-    });
-    $('[data-toggle="tooltip"]').tooltip();
-    $('.datatable').DataTable();
-    setTimeout(function () {
-      $(".alert.auto-dismiss").alert('close');
-    }, 10000);
-  };
-
-  window.setupNMSPage(); // Waves.
-
-  if (window.Waves) {
-    Waves.attach('.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on', ['waves-themed']);
-    Waves.init();
-  } // Slimscroll.
-
-
-  __webpack_require__(/*! jquery-slimscroll */ "./node_modules/jquery-slimscroll/jquery.slimscroll.js");
-
-  $('.slimscroll').slimScroll({
-    position: 'right',
-    color: '#0A2D50',
-    railVisible: true,
-    alwaysVisible: true
-  }); // Select 2.
-
-  $('select:not(.nos2)').select2({
-    'theme': 'bootstrap4'
-  }); // Clipboard.JS.
-
-  var ClipboardJS = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
-
-  var clipboard = new ClipboardJS('.btn-clipboard'); // Utils.
-
-  $(document).on('scroll', function () {
-    var scrollDistance = $(this).scrollTop();
-
-    if (scrollDistance > 100) {
-      $('.scroll-to-top').fadeIn();
-    } else {
-      $('.scroll-to-top').fadeOut();
-    }
-  });
-  $(document).on('click', 'a.scroll-to-top', function (e) {
-    $('html, body').stop().animate({
-      scrollTop: 0
-    }, 1000, 'swing');
-    e.preventDefault();
-  });
-})();
-
-/***/ }),
-
-/***/ "./assets/sass/app.scss":
-/*!******************************!*\
-  !*** ./assets/sass/app.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./node_modules/@fortawesome/fontawesome-free/js/all.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@fortawesome/fontawesome-free/js/all.js ***!
@@ -52655,15 +52540,154 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./source/assets/js/app.js":
+/*!*********************************!*\
+  !*** ./source/assets/js/app.js ***!
+  \*********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ "./node_modules/@fortawesome/fontawesome-free/js/all.js");
+/* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__);
+
+
+(function () {
+  'use strict';
+
+  window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+  __webpack_require__(/*! jquery-ui */ "./node_modules/jquery-ui/ui/widget.js");
+
+  __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+
+  __webpack_require__(/*! select2 */ "./node_modules/select2/dist/js/select2.js");
+
+  __webpack_require__(/*! node-waves */ "./node_modules/node-waves/src/js/waves.js");
+
+  __webpack_require__(/*! dropzone */ "./node_modules/dropzone/dist/dropzone.js");
+
+  window.dt = __webpack_require__(/*! datatables.net-bs4 */ "./node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js");
+
+  __webpack_require__(/*! datatables.net-responsive-bs4 */ "./node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.js");
+
+  $.urlParam = function (name) {
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+
+    if (results && results.length > 0) {
+      return results[1];
+    }
+
+    return 0;
+  };
+
+  window.setupNMSPage = function () {
+    $('[data-toggle="hoverover"]').popover({
+      trigger: 'hover',
+      boundary: 'window',
+      container: 'body'
+    });
+    $('[data-toggle="popover"]').popover({
+      trigger: 'focus',
+      boundary: 'window',
+      container: 'body'
+    });
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.datatable').DataTable();
+    setTimeout(function () {
+      $(".alert.auto-dismiss").alert('close');
+    }, 10000);
+  };
+
+  window.setupNMSPage(); // Waves.
+
+  if (window.Waves) {
+    Waves.attach('.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on', ['waves-themed']);
+    Waves.init();
+  } // Slimscroll.
+
+
+  __webpack_require__(/*! jquery-slimscroll */ "./node_modules/jquery-slimscroll/jquery.slimscroll.js");
+
+  $('.slimscroll').slimScroll({
+    position: 'right',
+    color: '#0A2D50',
+    railVisible: true,
+    alwaysVisible: true
+  }); // Select 2.
+
+  $('select:not(.nos2)').select2({
+    'theme': 'bootstrap4'
+  }); // Clipboard.JS.
+
+  var ClipboardJS = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
+
+  var clipboard = new ClipboardJS('.btn-clipboard'); // Utils.
+
+  $(document).on('scroll', function () {
+    var scrollDistance = $(this).scrollTop();
+
+    if (scrollDistance > 100) {
+      $('.scroll-to-top').fadeIn();
+    } else {
+      $('.scroll-to-top').fadeOut();
+    }
+  });
+  $(document).on('click', 'a.scroll-to-top', function (e) {
+    $('html, body').stop().animate({
+      scrollTop: 0
+    }, 1000, 'swing');
+    e.preventDefault();
+  });
+})();
+
+/***/ }),
+
+/***/ "./source/assets/sass/app.scss":
+/*!*************************************!*\
+  !*** ./source/assets/sass/app.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./source/assets/sass/custom-wholepage.scss":
+/*!**************************************************!*\
+  !*** ./source/assets/sass/custom-wholepage.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./source/assets/sass/custom.scss":
+/*!****************************************!*\
+  !*** ./source/assets/sass/custom.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*******************************************************!*\
-  !*** multi ./assets/js/app.js ./assets/sass/app.scss ***!
-  \*******************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** multi ./source/assets/js/app.js ./source/assets/sass/app.scss ./source/assets/sass/custom.scss ./source/assets/sass/custom-wholepage.scss ***!
+  \*************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/k1811651/nms_theme/assets/js/app.js */"./assets/js/app.js");
-module.exports = __webpack_require__(/*! /home/k1811651/nms_theme/assets/sass/app.scss */"./assets/sass/app.scss");
+__webpack_require__(/*! /home/k1811651/nms_theme/source/assets/js/app.js */"./source/assets/js/app.js");
+__webpack_require__(/*! /home/k1811651/nms_theme/source/assets/sass/app.scss */"./source/assets/sass/app.scss");
+__webpack_require__(/*! /home/k1811651/nms_theme/source/assets/sass/custom.scss */"./source/assets/sass/custom.scss");
+module.exports = __webpack_require__(/*! /home/k1811651/nms_theme/source/assets/sass/custom-wholepage.scss */"./source/assets/sass/custom-wholepage.scss");
 
 
 /***/ })

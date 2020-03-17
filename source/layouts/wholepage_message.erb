@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title><%= current_page.data.title || "Message" %></title>
+
+    <%= stylesheet_link_tag "app" %>
+    <%= stylesheet_link_tag "custom-wholepage" %>
+</head>
+
+<body class="whole-page-message">
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/videos/bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 my-auto">
+          <div class="masthead-content text-white py-5 py-md-0">
+            <img src="../images/kcl-logo.svg" class="d-inline-block align-top" alt="KCL Logo">
+            <h1 class="mb-3"><%= current_page.data.title %></h1>
+            <p class="mb-5"><%= current_page.data.body %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
