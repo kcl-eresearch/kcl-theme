@@ -18499,6 +18499,10 @@ h6,
   font-family: "KingsBureauGrotFiveOne", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .highlight {
   background-color: #f8f8f8;
 }
