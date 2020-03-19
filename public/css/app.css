@@ -18352,7 +18352,8 @@ body.infographic-page {
 
 body.infographic-page .infographic-container {
   position: relative;
-  margin: 5rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 3rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0 30px 0 #000;
