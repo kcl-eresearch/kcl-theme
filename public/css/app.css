@@ -18361,6 +18361,10 @@ body.infographic-page .infographic-container {
   min-height: 1000px;
 }
 
+body.infographic-page .infographic-container a {
+  text-decoration: underline;
+}
+
 body.infographic-page .infographic-container footer {
   position: absolute;
   bottom: 0;
@@ -18497,10 +18501,6 @@ h6,
 
 .lead {
   font-family: "KingsBureauGrotFiveOne", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-a {
-  text-decoration: underline;
 }
 
 .highlight {
