@@ -5,11 +5,7 @@ import '@fortawesome/fontawesome-free/js/all';
   window.$ = window.jQuery = require('jquery')
   require('jquery-ui')
   require('bootstrap')
-  require('select2')
-  require('node-waves')
   require('dropzone')
-  window.dt = require('datatables.net-bs4');
-  require('datatables.net-responsive-bs4');
 
   $.urlParam = function(name){
   	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -35,8 +31,6 @@ import '@fortawesome/fontawesome-free/js/all';
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    $('.datatable').DataTable();
-
     setTimeout(function() {
       $(".alert.auto-dismiss").alert('close');
     }, 10000);
@@ -44,7 +38,21 @@ import '@fortawesome/fontawesome-free/js/all';
 
   window.setupNMSPage();
 
+  // DataTables.
+  window.dt = require('datatables.net-bs4');
+  require('datatables.net-responsive-bs4');
+  $('.datatable').DataTable();
+
+  // Select 2.
+  require('select2')
+  $('select:not(.nos2):not(.duallistbox)').select2({'theme': 'bootstrap4'});
+
+  // Dual List-Box.
+  require('bootstrap4-duallistbox')
+  $('.duallistbox').bootstrapDualListbox();
+
   // Waves.
+  require('node-waves')
   if (window.Waves) {
       Waves.attach('.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on', ['waves-themed']);
       Waves.init();
@@ -58,9 +66,6 @@ import '@fortawesome/fontawesome-free/js/all';
   	railVisible: true,
   	alwaysVisible: true
   });
-
-  // Select 2.
-  $('select:not(.nos2)').select2({'theme': 'bootstrap4'});
 
   // Clipboard.JS.
   var ClipboardJS = require('clipboard')
