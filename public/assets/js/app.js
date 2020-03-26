@@ -71,6 +71,9 @@ import '@fortawesome/fontawesome-free/js/all';
   var ClipboardJS = require('clipboard')
   var clipboard = new ClipboardJS('.btn-clipboard');
 
+  // Typeahead.js.
+  require('typeahead.js')
+
   // Utils.
   $(document).on('scroll', function () {
     var scrollDistance = $(this).scrollTop();
