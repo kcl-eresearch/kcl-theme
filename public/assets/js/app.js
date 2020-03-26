@@ -1,4 +1,6 @@
 import '@fortawesome/fontawesome-free/js/all';
+import Bloodhound from "typeahead.js/dist/bloodhound";
+global.Bloodhound = Bloodhound;
 
 (function () {
   'use strict'
@@ -54,8 +56,11 @@ import '@fortawesome/fontawesome-free/js/all';
   // Waves.
   require('node-waves')
   if (window.Waves) {
-      Waves.attach('.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on', ['waves-themed']);
+    var wavesSelect = '.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on';
+    if ($(wavesSelect).length > 0) {
+      Waves.attach(wavesSelect, ['waves-themed']);
       Waves.init();
+    }
   }
 
   // Slimscroll.
@@ -69,10 +74,12 @@ import '@fortawesome/fontawesome-free/js/all';
 
   // Clipboard.JS.
   var ClipboardJS = require('clipboard')
-  var clipboard = new ClipboardJS('.btn-clipboard');
+  if ($('.btn-clipboard').length > 0) {
+    var clipboard = new ClipboardJS('.btn-clipboard');
+  }
 
   // Typeahead.js.
-  require('typeahead.js')
+  require('typeahead.js/dist/typeahead.jquery')
 
   // Utils.
   $(document).on('scroll', function () {

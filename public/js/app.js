@@ -53365,14 +53365,14 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/typeahead.js/dist/typeahead.bundle.js":
-/*!************************************************************!*\
-  !*** ./node_modules/typeahead.js/dist/typeahead.bundle.js ***!
-  \************************************************************/
+/***/ "./node_modules/typeahead.js/dist/bloodhound.js":
+/*!******************************************************!*\
+  !*** ./node_modules/typeahead.js/dist/bloodhound.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(setImmediate) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
  * typeahead.js 0.11.1
  * https://github.com/twitter/typeahead.js
  * Copyright 2013-2015 Twitter, Inc. and other contributors; Licensed MIT
@@ -54287,6 +54287,21 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     }();
     return Bloodhound;
 });
+
+/***/ }),
+
+/***/ "./node_modules/typeahead.js/dist/typeahead.jquery.js":
+/*!************************************************************!*\
+  !*** ./node_modules/typeahead.js/dist/typeahead.jquery.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(setImmediate) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * typeahead.js 0.11.1
+ * https://github.com/twitter/typeahead.js
+ * Copyright 2013-2015 Twitter, Inc. and other contributors; Licensed MIT
+ */
 
 (function(root, factory) {
     if (true) {
@@ -55894,9 +55909,13 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ "./node_modules/@fortawesome/fontawesome-free/js/all.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ "./node_modules/@fortawesome/fontawesome-free/js/all.js");
 /* harmony import */ var _fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_all__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var typeahead_js_dist_bloodhound__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! typeahead.js/dist/bloodhound */ "./node_modules/typeahead.js/dist/bloodhound.js");
+/* harmony import */ var typeahead_js_dist_bloodhound__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(typeahead_js_dist_bloodhound__WEBPACK_IMPORTED_MODULE_1__);
 
+
+global.Bloodhound = typeahead_js_dist_bloodhound__WEBPACK_IMPORTED_MODULE_1___default.a;
 
 (function () {
   'use strict';
@@ -55957,8 +55976,12 @@ __webpack_require__.r(__webpack_exports__);
   __webpack_require__(/*! node-waves */ "./node_modules/node-waves/src/js/waves.js");
 
   if (window.Waves) {
-    Waves.attach('.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on', ['waves-themed']);
-    Waves.init();
+    var wavesSelect = '.nav-menu:not(.js-waves-off) a, .btn:not(.js-waves-off):not(.btn-switch), .js-waves-on';
+
+    if ($(wavesSelect).length > 0) {
+      Waves.attach(wavesSelect, ['waves-themed']);
+      Waves.init();
+    }
   } // Slimscroll.
 
 
@@ -55973,9 +55996,12 @@ __webpack_require__.r(__webpack_exports__);
 
   var ClipboardJS = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
 
-  var clipboard = new ClipboardJS('.btn-clipboard'); // Typeahead.js.
+  if ($('.btn-clipboard').length > 0) {
+    var clipboard = new ClipboardJS('.btn-clipboard');
+  } // Typeahead.js.
 
-  __webpack_require__(/*! typeahead.js */ "./node_modules/typeahead.js/dist/typeahead.bundle.js"); // Utils.
+
+  __webpack_require__(/*! typeahead.js/dist/typeahead.jquery */ "./node_modules/typeahead.js/dist/typeahead.jquery.js"); // Utils.
 
 
   $(document).on('scroll', function () {
@@ -55994,6 +56020,7 @@ __webpack_require__.r(__webpack_exports__);
     e.preventDefault();
   });
 })();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 

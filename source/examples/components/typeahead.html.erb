@@ -1,0 +1,57 @@
+---
+title: Typeahead
+layout: sidebar
+---
+
+<p><a href="https://twitter.github.io/typeahead.js/">Typeahead</a> is a flexible JavaScript library that provides a strong foundation for building robust typeaheads.</p>
+<br />
+
+<input class="form-control" id="exampleTypeahead" />
+<small>Try typing 'Example 1', 'Hello world' or 'Goodbye world'.</small>
+
+<br />
+<br />
+
+<script type="text/javascript">
+(function () {
+  var examples = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: ['Example 1', 'Hello world', 'Goodbye world', 'Goodbye today']
+  });
+
+  $('#exampleTypeahead').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: 'examples',
+    source: examples
+  });
+}())
+</script>
+
+<% code("html") do %>
+<input class="form-control" id="exampleTypeahead" />
+
+<script type="text/javascript">
+(function () {
+  var examples = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: ['Example 1', 'Hello world', 'Goodbye world']
+  });
+
+  $('#exampleTypeahead').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: 'examples',
+    source: examples
+  });
+}())
+</script>
+<% end %>

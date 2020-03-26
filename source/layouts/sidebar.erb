@@ -9,6 +9,8 @@
 
   <%= stylesheet_link_tag "app" %>
   <%= stylesheet_link_tag "custom" %>
+
+  <%= javascript_include_tag "app" %>
 </head>
 <body class="whole-page sidebar-page">
   <span id="page-top"></span>
@@ -133,6 +135,12 @@
                 Dual List-Box
               <% end %>
             </li>
+            <li class="nav-item">
+              <% link_to '/examples/components/typeahead.html', :class => 'nav-link' do %>
+                <i class="fas fa-indent"></i>
+                Typeahead
+              <% end %>
+            </li>
           </ul>
         </div>
       </nav>
@@ -157,7 +165,5 @@
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-
-  <%= javascript_include_tag "app" %>
 </body>
 </html>
