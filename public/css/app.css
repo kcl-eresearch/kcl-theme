@@ -18222,7 +18222,8 @@ body.whole-page-message .message {
   }
 }
 
-body.whole-page-message video {
+body.whole-page-message video,
+body.whole-page-message img.wholepage {
   position: fixed;
   top: 50%;
   left: 50%;
