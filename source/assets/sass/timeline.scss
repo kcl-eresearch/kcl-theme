@@ -35,7 +35,7 @@ $timeline-inactive: $gray-600;
   	max-width: $timeline-parentMaxWidth;
   	position: relative;
   	z-index: 0;
-  	margin-left: calc(($timeline-parentWidth - $timeline-dotWidth) / $timeline-numDots); //make up for offset of .dot-info
+  	margin-left: calc((#{$timeline-parentWidth} - #{$timeline-dotWidth}) / #{$timeline-numDots}); //make up for offset of .dot-info
   }
 
   input {
@@ -68,11 +68,11 @@ $timeline-inactive: $gray-600;
     }
 
   	&::before {
-  		left: calc((-$timeline-parentWidth / $timeline-numDots) + ($timeline-dotWidth / 2));
+  		left: calc(#{-$timeline-parentWidth / $timeline-numDots} + #{$timeline-dotWidth / 2});
     }
 
   	&::after {
-  		right: calc((-$timeline-parentWidth / $timeline-numDots) + ($timeline-dotWidth / 2));
+  		right: calc(#{-$timeline-parentWidth / $timeline-numDots} + #{$timeline-dotWidth / 2});
     }
 
   	&:checked {
@@ -111,7 +111,7 @@ $timeline-inactive: $gray-600;
   	position: relative;
   	z-index: -1;
   	//position each span on top of the dot immediately before it; -1px at the end is just fudging the numbers for rounding error
-  	left: calc(((($timeline-parentWidth - $timeline-dotWidth) / $timeline-numDots) * -1) - 1px);
+  	left: calc((((#{$timeline-parentWidth} - #{$timeline-dotWidth}) / #{$timeline-numDots}) * -1) - 1px);
 
   	span {
   		visibility: visible;
@@ -150,7 +150,7 @@ $timeline-inactive: $gray-600;
   	margin-top: 70px;
   	font-size: 22px;
   	font-weight: 400;
-  	margin-left: calc((-$timeline-parentWidth - $timeline-dotWidth) / $timeline-numDots); //make up for offset of .dot-info
+  	margin-left: calc((-#{$timeline-parentWidth} - #{$timeline-dotWidth}) / #{$timeline-numDots}); //make up for offset of .dot-info
     text-align: center;
 
   	p {
@@ -161,25 +161,25 @@ $timeline-inactive: $gray-600;
 
   @media (min-width: $timeline-parentMaxWidth / $timeline-parentWidthBase) {
   	.input-flex-container {
-  		margin-left: ($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2);
+  		margin-left: #{($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2)};
     }
 
   	input {
   		&::before {
-  			left: -($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2);
+  			left: #{-($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2)};
       }
 
   		&::after {
-  			right: -($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2);
+  			right: #{-($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2)};
       }
     }
 
   	.dot-info {
-  		left: calc(((($timeline-parentMaxWidth - $timeline-dotWidth) / $timeline-numDots) * -1) - 1px);
+  		left: calc((((#{$timeline-parentMaxWidth} - #{$timeline-dotWidth}) / #{$timeline-numDots}) * -1) - 1px);
     }
 
   	.timeline-descriptions-wrapper {
-  		margin-left: -($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2);
+  		margin-left: #{-($timeline-parentMaxWidth / $timeline-numDots) + ($timeline-dotWidth / 2)};
     }
   }
 
