@@ -57,6 +57,23 @@ $border-radius: 0.35rem;
 $border-radius-lg: 0.4rem;
 $border-radius-sm: 0.3rem;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1800px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1720px
+) !default;
+
 // Tables
 $table-hover-color: $white;
 

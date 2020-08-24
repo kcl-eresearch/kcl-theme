@@ -79,12 +79,7 @@
   background-repeat: no-repeat;
   background-position: right top;
 
-  @media (min-width: 1076px) {
-    padding-left: 11%;
-    padding-right: 11%;
-  }
-
-  @media (min-width: 1303px) {
+  @media (min-width: map-get($grid-breakpoints, "xxl")) {
     padding-left: 18%;
     padding-right: 18%;
   }
@@ -92,11 +87,7 @@
   .navbar-brand {
     margin-left: 90px;
 
-    @media (min-width: 1076px) {
-      margin-left: 130px;
-    }
-
-    @media (min-width: 1303px) {
+    @media (min-width: map-get($grid-breakpoints, "xxl")) {
       margin-left: 130px;
     }
 
@@ -107,13 +98,7 @@
       height: 70px;
       width: 92px;
 
-      @media (min-width: 1076px) {
-        left: 10%;
-        height: 100px;
-        width: 130px;
-      }
-
-      @media (min-width: 1303px) {
+      @media (min-width: map-get($grid-breakpoints, "xxl")) {
         left: 17%;
         height: 100px;
         width: 130px;
