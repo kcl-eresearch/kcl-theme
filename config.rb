@@ -5,10 +5,6 @@ activate :syntax
 activate :livereload
 activate :relative_assets
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
 activate :external_pipeline,
   name: :mix,
   command: build? ? 'npm run dev' : 'npm run watch-poll',
