@@ -1,0 +1,147 @@
+---
+title: Timeline
+layout: sidebar
+---
+
+<p><a href="https://codepen.io/cjl750/pen/MXvYmg">Timeline</a> is a css module which allows you to add an elegant timeline to the page.</p>
+<br />
+
+<div class="timeline">
+  <div class="flex-parent">
+  	<div class="input-flex-container">
+  		<input type="radio" name="timeline-dot" data-description="desc0">
+  		<div class="dot-info" data-description="desc0">
+  			<span class="year">1910</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc1">
+  		<div class="dot-info" data-description="desc1">
+  			<span class="year">1920</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc2" checked>
+  		<div class="dot-info" data-description="desc2">
+  			<span class="year">1930</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc3">
+  		<div class="dot-info" data-description="desc3">
+  			<span class="year">1940</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc4">
+  		<div class="dot-info" data-description="desc4">
+  			<span class="year">1950</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc5">
+  		<div class="dot-info" data-description="desc5">
+  			<span class="year">1960</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc6">
+  		<div class="dot-info" data-description="desc6">
+  			<span class="year">1970</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc7">
+  		<div class="dot-info" data-description="desc7">
+  			<span class="year">1980</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc8">
+  		<div class="dot-info" data-description="desc8">
+  			<span class="year">1990</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc9">
+  		<div class="dot-info" data-description="desc9">
+  			<span class="year">2000</span>
+  			<span class="label">something</span>
+  		</div>
+  		<div class="timeline-descriptions-wrapper">
+  			<p data-description="desc0">Description goes here.</p>
+  			<p data-description="desc1">Description goes here.</p>
+  			<p data-description="desc2">Description goes here.</p>
+  			<p data-description="desc3">Description goes here.</p>
+  			<p data-description="desc4">Description goes here.</p>
+  			<p data-description="desc5">Description goes here.</p>
+  			<p data-description="desc6">Description goes here.</p>
+  			<p data-description="desc7">Description goes here.</p>
+  			<p data-description="desc8">Description goes here.</p>
+  			<p data-description="desc9">Description goes here.</p>
+  		</div>
+  	</div>
+  </div>
+</div>
+
+<br />
+
+<% code("html") do %>
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<input type="radio" name="timeline-dot" data-description="1910">
+		<div class="dot-info" data-description="1910">
+			<span class="year">1910</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1920">
+		<div class="dot-info" data-description="1920">
+			<span class="year">1920</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1930" checked>
+		<div class="dot-info" data-description="1930">
+			<span class="year">1930</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1940">
+		<div class="dot-info" data-description="1940">
+			<span class="year">1940</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1950">
+		<div class="dot-info" data-description="1950">
+			<span class="year">1950</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1960">
+		<div class="dot-info" data-description="1960">
+			<span class="year">1960</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1970">
+		<div class="dot-info" data-description="1970">
+			<span class="year">1970</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1980">
+		<div class="dot-info" data-description="1980">
+			<span class="year">1980</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1990">
+		<div class="dot-info" data-description="1990">
+			<span class="year">1990</span>
+			<span class="label">something</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="2000">
+		<div class="dot-info" data-description="2000">
+			<span class="year">2000</span>
+			<span class="label">something</span>
+		</div>
+		<div id="timeline-descriptions-wrapper">
+			<p data-description="1910">Description goes here.</p>
+			<p data-description="1920">Description goes here.</p>
+			<p data-description="1930">Description goes here.</p>
+			<p data-description="1940">Description goes here.</p>
+			<p data-description="1950">Description goes here.</p>
+			<p data-description="1960">Description goes here.</p>
+			<p data-description="1970">Description goes here.</p>
+			<p data-description="1980">Description goes here.</p>
+			<p data-description="1990">Description goes here.</p>
+			<p data-description="2000">Description goes here.</p>
+		</div>
+	</div>
+</div>
+<% end %>

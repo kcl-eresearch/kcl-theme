@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Timeline</title>
+
+  <link href="../../css/app.css" rel="stylesheet" />
+  <link href="../../css/custom.css" rel="stylesheet" />
+
+  <script src="../../js/app.js"></script>
+</head>
+<body class="whole-page sidebar-page">
+  <span id="page-top"></span>
+  <nav id="primary_nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <img src="../../images/kcl-logo.svg" class="d-inline-block align-top" alt="Kcl logo" />
+      <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;App Name<span class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</span>
+    </a>
+    <nav aria-label="breadcrumb" class="d-none d-lg-block">
+      <ol class="breadcrumb bg-none">
+        <li class="breadcrumb-item"><a href="#">Breadcrumb navigation</a></li>
+        <li class="breadcrumb-item"><a href="#">Previous page name</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Current page name</li>
+      </ol>
+    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-main" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainnavbar">
+      <div class="mr-auto"></div>
+      <div class="dropdown mr-3 d-none d-lg-block">
+        <button class="btn btn-kingsgrey dropdown-toggle" type="button" id="mainUserDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-lock"></i> Logged in as k1000000
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mainUserDropdown">
+          <a class="dropdown-item" href="#">Dashboard</a>
+          <a class="dropdown-item" href="#">Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="sidebar_content" class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-12 col-lg-2 bg-light sidebar collapse navbar-collapse" id="sidebar-main">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Side heading</span>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+<a href="/" class="nav-link">                <i class="fas fa-blender"></i>
+                Home
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/sidebar.html" class="nav-link active">                <i class="fas fa-cogs"></i>
+                Sidebar nav <span class="sr-only">(current)</span>
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/wholepage.html" class="nav-link">                <i class="fas fa-binoculars"></i>
+                Whole-page message
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/coming-soon.html" class="nav-link">                <i class="fas fa-biohazard"></i>
+                Coming soon page
+</a>            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Errors</span>
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+<a href="/errors/50x.html" class="nav-link">                <i class="fas fa-user"></i>
+                50x
+</a>            </li>
+            <li class="nav-item">
+<a href="/errors/404.html" class="nav-link">                <i class="fas fa-cog"></i>
+                404
+</a>            </li>
+            <li class="nav-item">
+<a href="/errors/403.html" class="nav-link">                <i class="fas fa-bell"></i>
+                403
+</a>            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Other Components</span>
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+<a href="/examples/components/datatables.html" class="nav-link">                <i class="fas fa-user"></i>
+                DataTables
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/dropzone.html" class="nav-link">                <i class="fas fa-cog"></i>
+                Dropzone (file uploads)
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/slimscroll.html" class="nav-link">                <i class="fas fa-scroll"></i>
+                Slimscroll
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/waves.html" class="nav-link">                <i class="fas fa-bacon"></i>
+                Waves
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/duallistbox.html" class="nav-link">                <i class="fas fa-clone"></i>
+                Dual List-Box
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/typeahead.html" class="nav-link">                <i class="fas fa-indent"></i>
+                Typeahead
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/quill.html" class="nav-link">                <i class="fas fa-keyboard"></i>
+                Quill (rich text editor)
+</a>            </li>
+            <li class="nav-item">
+<a href="/examples/components/timeline.html" class="nav-link">                <i class="fas fa-clock"></i>
+                Timeline
+</a>            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-12 col-lg-10 ml-sm-auto px-4">
+        <div class="row mb-2">
+          <div class="col">
+            <h2>Timeline</h2>
+            <hr />
+          </div>
+        </div>
+        <p><a href="https://codepen.io/cjl750/pen/MXvYmg">Timeline</a> is a css module which allows you to add an elegant timeline to the page.</p>
+<br />
+
+<div class="timeline">
+  <div class="flex-parent">
+  	<div class="input-flex-container">
+  		<input type="radio" name="timeline-dot" data-description="desc0">
+  		<div class="dot-info" data-description="desc0">
+  			<span class="year">1910</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc1">
+  		<div class="dot-info" data-description="desc1">
+  			<span class="year">1920</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc2" checked>
+  		<div class="dot-info" data-description="desc2">
+  			<span class="year">1930</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc3">
+  		<div class="dot-info" data-description="desc3">
+  			<span class="year">1940</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc4">
+  		<div class="dot-info" data-description="desc4">
+  			<span class="year">1950</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc5">
+  		<div class="dot-info" data-description="desc5">
+  			<span class="year">1960</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc6">
+  		<div class="dot-info" data-description="desc6">
+  			<span class="year">1970</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc7">
+  		<div class="dot-info" data-description="desc7">
+  			<span class="year">1980</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc8">
+  		<div class="dot-info" data-description="desc8">
+  			<span class="year">1990</span>
+  			<span class="label">something</span>
+  		</div>
+  		<input type="radio" name="timeline-dot" data-description="desc9">
+  		<div class="dot-info" data-description="desc9">
+  			<span class="year">2000</span>
+  			<span class="label">something</span>
+  		</div>
+  		<div class="timeline-descriptions-wrapper">
+  			<p data-description="desc0">Description goes here.</p>
+  			<p data-description="desc1">Description goes here.</p>
+  			<p data-description="desc2">Description goes here.</p>
+  			<p data-description="desc3">Description goes here.</p>
+  			<p data-description="desc4">Description goes here.</p>
+  			<p data-description="desc5">Description goes here.</p>
+  			<p data-description="desc6">Description goes here.</p>
+  			<p data-description="desc7">Description goes here.</p>
+  			<p data-description="desc8">Description goes here.</p>
+  			<p data-description="desc9">Description goes here.</p>
+  		</div>
+  	</div>
+  </div>
+</div>
+
+<br />
+
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-parent"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-flex-container"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1910"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1910"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1910<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1920"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1920"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1920<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1930"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1930"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1930<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1940"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1940"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1940<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1950"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1950"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1950<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1960"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1960"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1960<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1970"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1970"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1970<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1980"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1980"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1980<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"1990"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"1990"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>1990<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"timeline-dot"</span> <span class="na">data-description=</span><span class="s">"2000"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot-info"</span> <span class="na">data-description=</span><span class="s">"2000"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"year"</span><span class="nt">&gt;</span>2000<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>something<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"timeline-descriptions-wrapper"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1910"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1920"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1930"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1940"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1950"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1960"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1970"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1980"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"1990"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">data-description=</span><span class="s">"2000"</span><span class="nt">&gt;</span>Description goes here.<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+      </main>
+    </div>
+  </div>
+
+  <footer id="footer" class="bg-light text-muted d-none d-md-block">
+    <ul class="list-unstyled">
+      <li>Copyright &copy; 2020 King's College London - Faculty of Natural and Mathematical Sciences</li>
+    </ul>
+  </footer>
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+</body>
+</html>
