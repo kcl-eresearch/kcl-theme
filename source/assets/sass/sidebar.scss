@@ -85,8 +85,17 @@ body.sidebar-page {
 }
 
 .sidebar .nav-link {
+  position: relative;
   font-weight: 500;
   color: #333;
+  padding: 0.5rem 2rem 0.5rem 3rem;
+}
+
+.sidebar .nav-link .svg-inline--fa {
+    position: absolute;
+    left: 1.5rem;
+    top: 0.6rem;
+    width: 1rem;
 }
 
 .sidebar .nav-link .feather {
