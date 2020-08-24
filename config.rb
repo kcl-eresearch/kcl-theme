@@ -5,6 +5,10 @@ activate :syntax
 activate :livereload
 activate :relative_assets
 
+# Enable cache buster
+activate :cache_buster
+activate :asset_hash
+
 activate :external_pipeline,
   name: :mix,
   command: build? ? 'npm run dev' : 'npm run watch-poll',
