@@ -3,14 +3,14 @@
 0,700;1,400&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito&display=swap);@charset "UTF-8";
 @font-face {
   font-family: KingsBureauGrotFiveOne;
-  src: url("../fonts/KingsBureauGrotesqueFiveOne-eot.eot") format("eot");
-  src: url("../fonts/KingsBureauGrotesqueFiveOne-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/KingsBureauGrotesqueFiveOne-woff.woff") format("woff"), url("../fonts/KingsBureauGrotesqueFiveOne-ttf.ttf") format("truetype");
+  src: url("../fonts/KingsBureauGrotesqueFiveOne-eot.eot?1598273712") format("eot");
+  src: url("../fonts/KingsBureauGrotesqueFiveOne-eot.eot?1598273712?#iefix") format("embedded-opentype"), url("../fonts/KingsBureauGrotesqueFiveOne-woff.woff?1598273712") format("woff"), url("../fonts/KingsBureauGrotesqueFiveOne-ttf.ttf?1598273712") format("truetype");
 }
 
 @font-face {
   font-family: KingsBureauGrotThreeSeven;
-  src: url("../fonts/KingsBureauGrotesqueThreeSeven-eot.eot") format("eot");
-  src: url("../fonts/KingsBureauGrotesqueThreeSeven-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/KingsBureauGrotesqueThreeSeven-woff.woff") format("woff"), url("../fonts/KingsBureauGrotesqueThreeSeven-svg.svg") format("svg");
+  src: url("../fonts/KingsBureauGrotesqueThreeSeven-eot.eot?1598273712") format("eot");
+  src: url("../fonts/KingsBureauGrotesqueThreeSeven-eot.eot?1598273712?#iefix") format("embedded-opentype"), url("../fonts/KingsBureauGrotesqueThreeSeven-woff.woff?1598273712") format("woff"), url("../fonts/KingsBureauGrotesqueThreeSeven-svg.svg?1598273712") format("svg");
 }
 
 /*!
@@ -6061,8 +6061,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("../fonts/fa-regular-400.eot");
-  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-regular-400.eot?1598273712");
+  src: url("../fonts/fa-regular-400.eot?1598273712?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff?15982737122") format("woff2"), url("../fonts/fa-regular-400.woff?1598273712") format("woff"), url("../fonts/fa-regular-400.ttf?1598273712") format("truetype"), url("../fonts/fa-regular-400.svg?1598273712#fontawesome") format("svg");
 }
 
 @font-face {
@@ -6070,8 +6070,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("../fonts/fa-solid-900.eot");
-  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-solid-900.eot?1598273712");
+  src: url("../fonts/fa-solid-900.eot?1598273712?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff?15982737122") format("woff2"), url("../fonts/fa-solid-900.woff?1598273712") format("woff"), url("../fonts/fa-solid-900.ttf?1598273712") format("truetype"), url("../fonts/fa-solid-900.svg?1598273712#fontawesome") format("svg");
 }
 
 .fa,
@@ -18145,7 +18145,7 @@ pre.highlight {
 
 #primary_nav {
   z-index: 1000;
-  background-image: url(../images/header.png?003e2cdbd6dc35d02f555b843cca55d0);
+  background-image: url(../images/header.png?1598273712?003e2cdbd6dc35d02f555b843cca55d0);
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -18254,7 +18254,7 @@ body.whole-page-message img.wholepage {
 
 @media (pointer: coarse) and (hover: none) {
   body.whole-page-message {
-    background: url(../images/bg-mobile-fallback.jpg?2ba164ff263279ae810cfc969cf1ab93) #cd9557 no-repeat center center scroll;
+    background: url(../images/bg-mobile-fallback.jpg?1598273712?2ba164ff263279ae810cfc969cf1ab93) #cd9557 no-repeat center center scroll;
     background-position: cover;
   }
 
@@ -18363,7 +18363,7 @@ body.whole-page-message .overlay {
 
 body.infographic-page {
   background-color: #212529;
-  background-image: url("../images/infobg.png");
+  background-image: url("../images/infobg.png?1598273712");
   background-repeat: repeat-x;
 }
 

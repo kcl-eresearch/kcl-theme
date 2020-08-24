@@ -7,7 +7,6 @@ activate :relative_assets
 
 # Enable cache buster
 activate :cache_buster
-activate :asset_hash
 
 activate :external_pipeline,
   name: :mix,
