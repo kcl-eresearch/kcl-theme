@@ -1,0 +1,43 @@
+---
+title: ChartJS
+layout: sidebar
+---
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-sm">
+      <canvas id="guage-1" width="200" height="200"></canvas>
+    </div>
+    <div class="col-sm">
+      <canvas id="guage-2" width="200" height="200"></canvas>
+    </div>
+    <div class="col-sm">
+      <canvas id="guage-3" width="200" height="200"></canvas>
+    </div>
+  </div>
+</div>
+<script>
+RenderGuage("guage-1", "Active users", 45, window.chartjs_purple);
+RenderGuage("guage-2", "Active clients", 25);
+RenderGuage("guage-3", "Active servers", 85, window.chartjs_green);
+</script>
+
+<% code("html") do %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <canvas id="guage-1" width="200" height="200"></canvas>
+    </div>
+    <div class="col-sm">
+      <canvas id="guage-2" width="200" height="200"></canvas>
+    </div>
+    <div class="col-sm">
+      <canvas id="guage-3" width="200" height="200"></canvas>
+    </div>
+  </div>
+</div>
+<script>
+RenderGuage("guage-1", "Active users", 45);
+RenderGuage("guage-2", "Active clients", 25, window.chartjs_purple);
+RenderGuage("guage-3", "Active servers", 85, window.chartjs_green);
+</script>
+<% end %>
