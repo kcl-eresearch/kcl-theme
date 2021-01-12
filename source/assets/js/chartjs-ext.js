@@ -1,7 +1,7 @@
 
 window.chartjs_blue = "#0A2D50";
 window.chartjs_indigo = "#005AD2";
-window.chartjs_purple = "#7242C2";
+window.chartjs_purple = "#9B82D2";
 window.chartjs_pink = "#FC5E72";
 window.chartjs_red = "#E2231A";
 window.chartjs_orange = "#FF5F05";
