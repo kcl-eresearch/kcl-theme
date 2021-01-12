@@ -2,5 +2,6 @@
     "/.tmp/dist/js/app.js": "/.tmp/dist/js/app.js",
     "/.tmp/dist/css/app.css": "/.tmp/dist/css/app.css",
     "/.tmp/dist/css/custom.css": "/.tmp/dist/css/custom.css",
-    "/.tmp/dist/css/custom-wholepage.css": "/.tmp/dist/css/custom-wholepage.css"
+    "/.tmp/dist/css/custom-wholepage.css": "/.tmp/dist/css/custom-wholepage.css",
+    "/.tmp/dist/js/app-slim.js": "/.tmp/dist/js/app-slim.js"
 }

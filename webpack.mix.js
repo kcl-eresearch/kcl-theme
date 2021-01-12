@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('source/assets/js/app.js', '.tmp/dist/js');
+mix.js('source/assets/js/app-slim.js', '.tmp/dist/js');
 mix.sass('source/assets/sass/app.scss', '.tmp/dist/css');
 mix.sass('source/assets/sass/custom.scss', '.tmp/dist/css');
 mix.sass('source/assets/sass/custom-wholepage.scss', '.tmp/dist/css');
