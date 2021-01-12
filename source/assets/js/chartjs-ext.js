@@ -50,17 +50,17 @@ function LightenDarkenColor(col,amt) {
     return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
 }
 
-function RenderGuage(elem, label, value, color=window.chartjs_primary)
+function RenderGuage(elem, label, value, max_value=100, color=window.chartjs_primary)
 {
   var ctx = document.getElementById(elem).getContext('2d');
   var myChart = new Chart(ctx, {
     type: "doughnut",
     data: {
-      labels: [label, ""],
+      labels: [label],
       datasets: [
         {
-          label: [label, ""],
-          data: [value, 100 - value],
+          label: [label],
+          data: [value, max_value - value],
           backgroundColor: [color],
           borderColor: [LightenDarkenColor(color, -20)],
           borderWidth: 1

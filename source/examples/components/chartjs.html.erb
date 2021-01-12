@@ -19,9 +19,9 @@ layout: sidebar
   </div>
 </div>
 <script>
-RenderGuage("guage-1", "Active users", 45, window.chartjs_purple);
+RenderGuage("guage-1", "Active users", 45, 100, window.chartjs_purple);
 RenderGuage("guage-2", "Active clients", 25);
-RenderGuage("guage-3", "Active servers", 85, window.chartjs_green);
+RenderGuage("guage-3", "Active servers", 85, 100, window.chartjs_green);
 </script>
 
 <% code("html") do %>
@@ -43,8 +43,8 @@ RenderGuage("guage-3", "Active servers", 85, window.chartjs_green);
 </div>
 <script>
 RenderGuage("guage-1", "Active users", 45);
-RenderGuage("guage-2", "Active clients", 25, window.chartjs_purple);
-RenderGuage("guage-3", "Active servers", 85, window.chartjs_green);
+RenderGuage("guage-2", "Active clients", 25, 100, window.chartjs_purple);
+RenderGuage("guage-3", "Active servers", 85, 100, window.chartjs_green);
 </script>
 <% end %>
 
