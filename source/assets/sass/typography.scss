@@ -6,10 +6,14 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
-.lead {
+.lead, p {
   font-family: "KingsBureauGrotFiveOne","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .form-control {
   color: $gray-900;
+}
+
+.text-black {
+  color: #000;
 }

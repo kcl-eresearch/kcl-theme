@@ -16,28 +16,16 @@
 }
 
 .navbar-dark .navbar-nav .nav-item {
-  &:hover, &.active, &.active {
-    .nav-link {
-      color: $white !important;
-      font-weight: normal;
-    }
-  }
-
   .nav-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: $white !important;
+    font-weight: normal;
   }
 }
 
 .navbar-light .navbar-nav .nav-item {
-  &:hover, &.active, &.active {
-    .nav-link {
-      color: $black !important;
-      font-weight: normal;
-    }
-  }
-
   .nav-link {
-    color: rgba(0, 0, 0, 0.5);
+    color: $black !important;
+    font-weight: normal;
   }
 }
 
@@ -47,7 +35,7 @@
   }
 
   .navbar-nav .nav-item {
-    height: 70.2px;
+    height: 73px;
   }
 
   .navbar-dark .navbar-nav .nav-item {
