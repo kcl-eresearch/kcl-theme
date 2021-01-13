@@ -14,7 +14,7 @@ global.Bloodhound = Bloodhound;
   require('typeahead.js/dist/typeahead.jquery')
   global.ClipboardJS = require('clipboard')
 
-  require('./common.js?1610559531')
+  require('./common.js?1610560264')
 
   $(document).ready(function() {
     // Quill.
