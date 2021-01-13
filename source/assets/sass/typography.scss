@@ -17,3 +17,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .text-black {
   color: #000;
 }
+
+.bg-light .text-muted, .bg-light.text-muted {
+  color: $gray-900 !important;
+}

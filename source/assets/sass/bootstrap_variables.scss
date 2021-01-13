@@ -64,7 +64,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1800px
+  xxl: 1800px,
+  4k: 3800px,
 ) !default;
 
 $container-max-widths: (
@@ -72,7 +73,8 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1720px
+  xxl: 1720px,
+  4k: 3800px,
 ) !default;
 
 $spacer: 1rem !default;
