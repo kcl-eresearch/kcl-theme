@@ -1,0 +1,40 @@
+
+$theme-text-colors: (
+  "primary": $white,
+  "secondary": $white,
+  "danger": $white,
+  "dark": $white,
+  "red": $white,
+  "blue": $white,
+  "indigo": $white,
+  "purple": $white,
+
+  "success": $gray-1000,
+  "info": $gray-1000,
+  "warning": $gray-1000,
+  "light": $gray-1000,
+  "pink": $gray-1000,
+  "cyan": $gray-1000,
+  "green": $gray-1000,
+  "yellow": $gray-1000,
+  "orange": $gray-1000,
+  "teal": $gray-1000
+);
+
+@each $color, $value in $theme-text-colors {
+  .bg-#{$color}, .badge-#{$color}, .btn-#{$color} {
+    color: $value;
+  }
+
+  .table-#{$color} {
+    color: $value !important;
+  }
+
+  .alert-#{$color} {
+    color: $value;
+
+    .alert-link {
+      color: $value;
+    }
+  }
+}
