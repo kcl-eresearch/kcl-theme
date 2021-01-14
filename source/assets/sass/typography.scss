@@ -21,3 +21,21 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .bg-light .text-muted, .bg-light.text-muted {
   color: $gray-900 !important;
 }
+
+@each $color, $value in $theme-text-colors {
+  .bg-#{$color}, .badge-#{$color}, .btn-#{$color} {
+    color: $value;
+  }
+
+  .table-#{$color} {
+    color: $value !important;
+  }
+
+  .alert-#{$color} {
+    color: $value;
+
+    .alert-link, a {
+      color: $value;
+    }
+  }
+}
