@@ -1,0 +1,32 @@
+
+$blue:    #0A2D50 !default;
+$indigo:  #005AD2 !default;
+$purple:  #9B82D2 !default;
+$pink:    #FC5E72 !default;
+$red:     #E2231A !default;
+$orange:  #FF5F05 !default;
+$yellow:  #F5B90F !default;
+$green:   #28C382 !default;
+$teal:    #009EA0 !default;
+$cyan:    #00B9E1 !default;
+
+$kingsred: $red;
+$kingsgrey: #5a6469;
+$kingsdarkgrey: #575756;
+$pearlgrey: #CDD7DC;
+
+$primary:       $kingsgrey !default;
+$secondary:     $blue !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $pearlgrey !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: (
+  "kingsred": $kingsred,
+  "kingsgrey": $kingsgrey,
+  "kingsdarkgrey": $kingsdarkgrey,
+  "pearlgrey": $pearlgrey,
+);
