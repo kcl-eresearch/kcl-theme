@@ -19,8 +19,8 @@ global.Bloodhound = Bloodhound;
   global.Quill = require('quill')
   require('chart.js')
 
-  require('./common.js?1610560264')
-  require('./chartjs-ext.js?1610560264')
+  require('./common.js?1610620878')
+  require('./chartjs-ext.js?1610620878')
 
   $(document).ready(function() {
     // Quill.

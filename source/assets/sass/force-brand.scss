@@ -33,7 +33,7 @@ $theme-text-colors: (
   .alert-#{$color} {
     color: $value;
 
-    .alert-link {
+    .alert-link, a {
       color: $value;
     }
   }
