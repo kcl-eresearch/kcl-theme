@@ -32,23 +32,23 @@ $theme-colors: (
 );
 
 $theme-text-colors: (
-  "primary": $white,
-  "secondary": $white,
-  "danger": $white,
-  "dark": $white,
-  "red": $white,
-  "blue": $white,
-  "indigo": $white,
-  "purple": $white,
+  "primary": lighten($primary, 60%),
+  "secondary": lighten($secondary, 60%),
+  "danger": lighten($danger, 60%),
+  "dark": lighten($dark, 60%),
+  "red": lighten($red, 60%),
+  "blue": lighten($blue, 60%),
+  "indigo": lighten($indigo, 60%),
+  "purple": lighten($purple, 60%),
 
-  "success": $gray-1000,
-  "info": $gray-1000,
-  "warning": $gray-1000,
+  "success": darken($success, 40%),
+  "info": darken($info, 40%),
+  "warning": darken($warning, 40%),
   "light": $gray-1000,
-  "pink": $gray-1000,
-  "cyan": $gray-1000,
-  "green": $gray-1000,
-  "yellow": $gray-1000,
-  "orange": $gray-1000,
-  "teal": $gray-1000
+  "pink": darken($pink, 40%),
+  "cyan": darken($cyan, 40%),
+  "green": darken($green, 40%),
+  "yellow": darken($yellow, 40%),
+  "orange": darken($orange, 40%),
+  "teal": darken($teal, 40%)
 );
