@@ -12,7 +12,7 @@
  */
 
 /*!
- * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -102,12 +102,16 @@
  * ©2008-2020 SpryMedia Ltd - datatables.net/license
  */
 
+/*! DataTables 1.10.23
+ * ©2008-2020 SpryMedia Ltd - datatables.net/license
+ */
+
 /*! DataTables Bootstrap 4 integration
  * ©2011-2017 SpryMedia Ltd - datatables.net/license
  */
 
-/*! Responsive 2.2.6
- * 2014-2020 SpryMedia Ltd - datatables.net/license
+/*! Responsive 2.2.7
+ * 2014-2021 SpryMedia Ltd - datatables.net/license
  */
 
 /**
