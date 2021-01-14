@@ -23,7 +23,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 @each $color, $value in $theme-text-colors {
-  .bg-#{$color}, .badge-#{$color}, .btn-#{$color} {
+  .bg-#{$color}, .badge-#{$color} {
+    color: $value;
+  }
+
+   .btn-#{$color}, .btn-#{$color}:hover {
     color: $value;
   }
 
