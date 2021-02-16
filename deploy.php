@@ -4,13 +4,13 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Default env.
-set('default_stage', 'staging');
+set('default_stage', 'production');
 
 // Project name
-set('application', 'NMSTheme');
+set('application', 'e-Research Theme');
 
 // Project repository
-set('repository', 'git@gitlab.nms.kcl.ac.uk:nms-web/nms_theme.git');
+set('repository', 'git@gitlab.er.kcl.ac.uk:web/theme.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -20,29 +20,13 @@ set('shared_files', []);
 
 // Hosts
 
-host('nmswebcore0t.nms.kcl.ac.uk')
-    ->stage('staging')
-    ->user('w3admin')
-    ->forwardAgent(true)
-    ->set('deploy_path', '/var/www/vhost/theme-test.nms.kcl.ac.uk/app');
-
-host('nmswebcore0.nms.kcl.ac.uk')
+host('erwebctl1.er.kcl.ac.uk')
     ->stage('production')
     ->user('w3admin')
     ->forwardAgent(true)
-    ->set('deploy_path', '/var/www/vhost/theme.nms.kcl.ac.uk/app');
-
-host('nmswebcore1.nms.kcl.ac.uk')
-    ->stage('production1')
-    ->user('w3admin')
-    ->forwardAgent(true)
-    ->set('deploy_path', '/var/www/vhost/theme.nms.kcl.ac.uk/app');
+    ->set('deploy_path', '/var/www/vhost/theme.er.kcl.ac.uk/app');
 
 // Custom tasks
-
-task('reload:php-fpm', function () {
-    run('sudo /bin/systemctl reload php7.2-fpm');
-});
 
 task('deploy', [
     'deploy:prepare',

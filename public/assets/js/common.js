@@ -9,7 +9,7 @@ $.urlParam = function(name){
 }
 
 // Utils.
-window.setupNMSPage = function() {
+window.setupERPage = function() {
   $('[data-toggle="hoverover"]').popover({
       trigger: 'hover',
       boundary: 'window',
@@ -78,5 +78,5 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-  window.setupNMSPage();
+  window.setupERPage();
 });
