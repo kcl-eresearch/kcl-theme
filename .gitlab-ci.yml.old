@@ -1,4 +1,4 @@
-image: gitlab.nms.kcl.ac.uk:4567/nms-web/nms_theme:latest
+image: gitlab.er.kcl.ac.uk.uk:4567/nms-web/nms_theme:latest
 
 stages:
   - deploy
