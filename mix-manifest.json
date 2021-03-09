@@ -1,6 +1,7 @@
 {
     "/.tmp/dist/js/app.js": "/.tmp/dist/js/app.js",
     "/.tmp/dist/js/app-slim.js": "/.tmp/dist/js/app-slim.js",
+    "/.tmp/dist/css/app-slim.css": "/.tmp/dist/css/app-slim.css",
     "/.tmp/dist/css/app.css": "/.tmp/dist/css/app.css",
     "/.tmp/dist/css/custom-wholepage.css": "/.tmp/dist/css/custom-wholepage.css",
     "/.tmp/dist/css/custom.css": "/.tmp/dist/css/custom.css",
