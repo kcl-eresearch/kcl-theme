@@ -17,6 +17,7 @@ mix.sass('source/assets/sass/app.scss', '.tmp/dist/css');
 mix.sass('source/assets/sass/app-slim.scss', '.tmp/dist/css');
 mix.sass('source/assets/sass/custom.scss', '.tmp/dist/css');
 mix.sass('source/assets/sass/custom-wholepage.scss', '.tmp/dist/css');
+mix.sass('source/assets/sass/extensions/ext-animate.scss', '.tmp/dist/css');
 mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', '.tmp/dist/fonts');
 mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/sprites', '.tmp/dist/sprites');
 mix.copyDirectory('source/assets/fonts', '.tmp/dist/fonts');

@@ -1,0 +1,17 @@
+
+@import "~animate.css/animate";
+
+.anim-btn-grp .anim-btn {
+  transition: width 0.1s linear,
+              height 0.1s linear,
+              flex-basis 0.1s linear,
+              padding 0.1s linear;
+
+  &.zero-out {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    flex-basis: 0 !important;
+    overflow: hidden !important;
+  }
+}

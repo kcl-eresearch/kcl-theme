@@ -3,6 +3,7 @@
     "/.tmp/dist/js/app-slim.js": "/.tmp/dist/js/app-slim.js",
     "/.tmp/dist/css/app-slim.css": "/.tmp/dist/css/app-slim.css",
     "/.tmp/dist/css/app.css": "/.tmp/dist/css/app.css",
+    "/.tmp/dist/css/ext-animate.css": "/.tmp/dist/css/ext-animate.css",
     "/.tmp/dist/css/custom-wholepage.css": "/.tmp/dist/css/custom-wholepage.css",
     "/.tmp/dist/css/custom.css": "/.tmp/dist/css/custom.css",
     "/.tmp/dist/fonts/fa-brands-400.eot": "/.tmp/dist/fonts/fa-brands-400.eot",

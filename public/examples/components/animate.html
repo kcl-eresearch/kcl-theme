@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Slimscroll</title>
+  <title>Animate</title>
 
   <link href="../../css/app.css?1615299787" rel="stylesheet" />
   <link href="../../css/custom.css?1615299787" rel="stylesheet" />
@@ -138,53 +138,80 @@
       <main role="main" class="col-md-12 col-lg-10 col-4k-11 ml-sm-auto px-4">
         <div class="row mb-2">
           <div class="col">
-            <h2>Slimscroll</h2>
+            <h2>Animate</h2>
             <hr />
           </div>
         </div>
-        <p><a href="https://github.com/rochal/jQuery-slimScroll">Slimscroll</a> is a javascript library which allows you to add an elegant scrollbar to divs.</p>
-<br />
+        <p class="mb-4">
+Use animations VERY sparingly.
+A good example use case is when a button press results in a delayed ajax call. Here, you can use animations to create a spinner in place of the button that fades out to a tick when the call is complete.
+</p>
 
-<div class="slimscroll custom-scroll" style="height:300px">
-  <div class="p-3">
-    Sed dolor autem in. deserunt corrupti vel ipsum animi provident architecto quas. sint quasi repellat a et corrupti odio dolorem quaerat. enim aliquam et nemo incidunt qui veniam et magnam. sit et commodi id nisi commodi nam dignissimos veritatis nostrum
+<script>
+window.buttonWaiterExample = function(element) {
+  buttonWaiter(element)
+  setTimeout(function(element) {
+    buttonWaiterEnd(element)
+  }, 2000, element)
+}
 
-Blanditiis laborum quia asperiores ut earum enim harum veniam. et ea perferendis delectus. id esse fugiat eveniet. occaecati quasi delectus sunt molestiae eos enim magnam rerum et voluptas. omnis perspiciatis quae voluptate molestiae voluptate omnis adipisci error dolores molestiae nulla et rerum sint. odio facere rem ut rem voluptate. nam dolorum deleniti veniam soluta exercitationem adipisci voluptas qui assumenda consequatur explicabo et quo rerum
+window.buttonWaiterExampleFail = function(element) {
+  buttonWaiter(element)
+  setTimeout(function(element) {
+    buttonWaiterEnd(element, 'times')
+  }, 2000, element)
+}
+</script>
 
-Sit fuga debitis nobis recusandae amet voluptates velit. aut modi ut quia eum. et magni voluptatem aut omnis velit ea neque id voluptas et. fugit sed itaque consectetur itaque neque. in velit rerum beatae sit ut et provident iure iure iusto assumenda a exercitationem
-
-Et rem sequi voluptatem nihil voluptatem quaerat non modi. quas fugiat iure eos amet sequi hic eos consequuntur illum eos est aliquid dolor. quas voluptas voluptatem sed beatae doloremque ad. magni expedita doloribus enim veritatis non a voluptatem eligendi est et eum. nisi nulla iste pariatur aliquam praesentium eaque molestiae molestiae et at hic provident praesentium
-
-Id tenetur quaerat asperiores laboriosam nisi ducimus culpa id. sunt soluta unde enim totam non quia labore. quo voluptatum quaerat porro laborum. eum reiciendis autem sunt dignissimos quisquam aut enim. similique laudantium ut animi nobis ut voluptate
-
-Magnam illum sequi assumenda maiores quidem nam et suscipit eos eaque tenetur voluptate omnis. omnis unde eaque ea porro qui accusamus ut et atque ipsum qui eius quaerat sed. qui et hic qui eaque magni hic assumenda. veritatis ut sequi sit in soluta porro perspiciatis dignissimos quam dolor quas fuga quis quae
-
-Est quas cumque perferendis animi consequatur et vel vel ipsum. id placeat velit corrupti sint ea ad dolores aut sed cum qui voluptatem. ullam corrupti deserunt debitis molestiae earum incidunt voluptas nobis et assumenda saepe
-
-Et odit qui quae consectetur repudiandae asperiores velit perspiciatis et. sit sed eum rerum rerum labore modi voluptatem illo possimus. occaecati ratione totam sit voluptatem et est rerum aut vel. temporibus sit est et perferendis quis est error quibusdam quos incidunt. iusto voluptatibus consectetur laboriosam temporibus ut
-
-Non consequatur aut eaque temporibus sed unde qui voluptas odio. saepe explicabo eveniet molestiae et dignissimos amet dolor iste esse. sunt tempore praesentium sequi possimus et consequuntur ad et. facere temporibus hic quo. nihil sit dolor quibusdam. placeat fugiat et eos possimus consectetur occaecati suscipit quia enim ipsam nulla. in consequatur dolor hic laudantium ullam id velit inventore labore dicta natus quia expedita voluptas
-
-Aut inventore atque natus possimus qui nulla quos facere rerum commodi aut similique molestiae quasi. velit nobis magni ut exercitationem rerum blanditiis ut occaecati blanditiis. omnis qui aut ut consequatur officia ex qui molestiae ipsam. dolores enim commodi facilis consequuntur quasi temporibus dolorem enim at voluptas et et sint
-
-Aliquam libero blanditiis adipisci nihil quisquam. tempora itaque et impedit voluptates. cupiditate nihil expedita fugiat vitae voluptatem perspiciatis quibusdam. quis illum ut magni ipsa. at amet dolor eos non et distinctio nisi autem mollitia ipsum vero. deserunt ea quidem consectetur veniam corrupti temporibus labore expedita ut. repellat quisquam ratione non adipisci sunt fuga quia consectetur incidunt et ut voluptas debitis
-
-Incidunt enim quas optio alias itaque ex distinctio minus. enim eligendi voluptatem dicta delectus. aut aliquid repellat et. itaque fuga nihil officia aut sapiente iste sunt et totam neque temporibus. ut facilis accusantium aut nesciunt molestiae in aut. id nulla iure excepturi. corporis voluptas et cum
-
-Consequatur quia recusandae dolores voluptas repellendus commodi soluta tenetur et nulla eos sed autem et. explicabo illum quia inventore sint praesentium cumque dolorem nisi perferendis aut minima. voluptatum et eos ipsum ut magnam ut vero voluptas rerum voluptatem reiciendis ipsa esse. quis quis veniam illo id eos accusantium molestias aperiam odio enim. voluptates et nostrum eveniet quos dolor
-
-Tempora occaecati occaecati sit odio id repellendus nihil minima. optio molestias qui doloribus odit laudantium non enim minus nihil vitae placeat eaque quisquam nulla. deserunt minus quasi quia cumque accusamus quia vero. illum nemo tempore et. perferendis debitis et esse illo et consequatur. amet eos est rerum
-
-Sint natus aut aut iusto magnam quod non quos enim repellendus nam. voluptatum velit culpa dolorem soluta nesciunt laudantium numquam et reprehenderit iure nihil ea quod a. iure ipsum amet deleniti ut debitis saepe. autem rerum dolores odit similique incidunt vitae molestiae voluptatem aut. alias minima et beatae
+<div class="row justify-content-md-center anim-btn-grp">
+  <div class="col-3 anim-btn">
+    <button id="animbtnex" class="btn btn-success btn-block" onclick="buttonWaiterExample('#animbtnex');">
+      <span>Click me (successful AJAX call)</span>
+    </button>
+  </div>
+  <div class="col-3 anim-btn">
+    <button id="animbtnex2" class="btn btn-danger btn-block" onclick="buttonWaiterExampleFail('#animbtnex2');">
+      <span>Click me (failed AJAX call)</span>
+    </button>
   </div>
 </div>
-<br />
-<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slimscroll custom-scroll"</span> <span class="na">style=</span><span class="s">"height:300px"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3"</span><span class="nt">&gt;</span>
-    ...
+<br/>
+<br/>
+
+
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;script&gt;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">buttonWaiterExample</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">buttonWaiter</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">buttonWaiterEnd</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span>
+  <span class="p">},</span> <span class="mi">2000</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nb">window</span><span class="p">.</span><span class="nx">buttonWaiterExampleFail</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">buttonWaiter</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">buttonWaiterEnd</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="s1">'times'</span><span class="p">)</span>
+  <span class="p">},</span> <span class="mi">2000</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"animbtnex"</span> <span class="na">class=</span><span class="s">"btn btn-success btn-block"</span> <span class="na">onclick=</span><span class="s">"buttonWaiterExample('#animbtnex');"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Click me (successful AJAX call)<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"animbtnex2"</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-block"</span> <span class="na">onclick=</span><span class="s">"buttonWaiterExampleFail('#animbtnex2');"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Click me (failed AJAX call)<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
+<p class="mt-4">
+  <small>See <a href="https://animate.style/#usage">https://animate.style/#usage</a> for more examples</small>
+</p>
+
       </main>
     </div>
   </div>

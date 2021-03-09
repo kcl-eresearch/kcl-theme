@@ -15,6 +15,7 @@ global.Bloodhound = Bloodhound;
   global.ClipboardJS = require('clipboard')
 
   require('./common.js')
+  require('./animate.js')
 
   $(document).ready(function() {
     // Quill.

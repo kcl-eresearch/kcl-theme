@@ -1,0 +1,76 @@
+---
+title: Animate
+layout: sidebar
+---
+
+<p class="mb-4">
+Use animations VERY sparingly.
+A good example use case is when a button press results in a delayed ajax call. Here, you can use animations to create a spinner in place of the button that fades out to a tick when the call is complete.
+</p>
+
+<script>
+window.buttonWaiterExample = function(element) {
+  buttonWaiter(element)
+  setTimeout(function(element) {
+    buttonWaiterEnd(element)
+  }, 2000, element)
+}
+
+window.buttonWaiterExampleFail = function(element) {
+  buttonWaiter(element)
+  setTimeout(function(element) {
+    buttonWaiterEnd(element, 'times')
+  }, 2000, element)
+}
+</script>
+
+<div class="row justify-content-md-center anim-btn-grp">
+  <div class="col-3 anim-btn">
+    <button id="animbtnex" class="btn btn-success btn-block" onclick="buttonWaiterExample('#animbtnex');">
+      <span>Click me (successful AJAX call)</span>
+    </button>
+  </div>
+  <div class="col-3 anim-btn">
+    <button id="animbtnex2" class="btn btn-danger btn-block" onclick="buttonWaiterExampleFail('#animbtnex2');">
+      <span>Click me (failed AJAX call)</span>
+    </button>
+  </div>
+</div>
+<br/>
+<br/>
+
+
+<% code("html") do %>
+<script>
+window.buttonWaiterExample = function(element) {
+  buttonWaiter(element)
+  setTimeout(function(element) {
+    buttonWaiterEnd(element)
+  }, 2000, element)
+}
+
+window.buttonWaiterExampleFail = function(element) {
+  buttonWaiter(element)
+  setTimeout(function(element) {
+    buttonWaiterEnd(element, 'times')
+  }, 2000, element)
+}
+</script>
+
+<div class="row">
+  <div class="col-3">
+    <button id="animbtnex" class="btn btn-success btn-block" onclick="buttonWaiterExample('#animbtnex');">
+      <span>Click me (successful AJAX call)</span>
+    </button>
+  </div>
+  <div class="col-3">
+    <button id="animbtnex2" class="btn btn-danger btn-block" onclick="buttonWaiterExampleFail('#animbtnex2');">
+      <span>Click me (failed AJAX call)</span>
+    </button>
+  </div>
+</div>
+<% end %>
+
+<p class="mt-4">
+  <small>See <a href="https://animate.style/#usage">https://animate.style/#usage</a> for more examples</small>
+</p>
