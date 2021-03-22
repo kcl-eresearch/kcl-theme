@@ -32,23 +32,23 @@ $theme-colors: (
 );
 
 $theme-text-colors: (
-  "primary": lighten($primary, 60%),
-  "secondary": lighten($secondary, 60%),
-  "danger": lighten($danger, 60%),
-  "dark": lighten($dark, 60%),
-  "red": lighten($red, 60%),
-  "blue": lighten($blue, 60%),
-  "indigo": lighten($indigo, 60%),
-  "purple": lighten($purple, 60%),
+  "primary": lighten($primary, 70%),
+  "secondary": lighten($secondary, 70%),
+  "danger": lighten($danger, 70%),
+  "dark": lighten($dark, 70%),
+  "red": lighten($red, 70%),
+  "blue": lighten($blue, 70%),
+  "indigo": lighten($indigo, 70%),
+  "purple": lighten($purple, 70%),
 
-  "success": darken($success, 40%),
-  "info": darken($info, 40%),
-  "warning": darken($warning, 40%),
+  "success": darken($success, 50%),
+  "info": darken($info, 50%),
+  "warning": darken($warning, 50%),
   "light": $gray-1000,
-  "pink": darken($pink, 40%),
-  "cyan": darken($cyan, 40%),
-  "green": darken($green, 40%),
-  "yellow": darken($yellow, 40%),
-  "orange": darken($orange, 40%),
-  "teal": darken($teal, 40%)
+  "pink": darken($pink, 50%),
+  "cyan": darken($cyan, 50%),
+  "green": darken($green, 50%),
+  "yellow": darken($yellow, 50%),
+  "orange": darken($orange, 50%),
+  "teal": darken($teal, 50%)
 );
