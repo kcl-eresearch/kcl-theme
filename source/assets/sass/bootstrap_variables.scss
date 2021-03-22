@@ -17,7 +17,7 @@ $gray-900: #212529 !default;
 $gray-1000: #121517 !default;
 $black:    #000 !default;
 
-@import "colorscheme-official";
+@import "colorscheme-wash";
 
 $yiq-contrasted-threshold:  128 !default;
 $yiq-text-dark: $gray-1000;
@@ -109,6 +109,10 @@ $navbar-padding-y:                  1rem !default;
 
 $navbar-dark-color:                 $white !default;
 $navbar-dark-hover-color:           $success !default;
+
+$breadcrumb-active-color:           $gray-500 !default;
+$breadcrumb-divider-color:          $gray-500 !default;
+$hr-border-color:                   $gray-500 !default;
 
 // Pagination
 
